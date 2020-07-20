@@ -1,0 +1,161 @@
+
+/**
+    This file is part of Libreosteo.
+
+    Libreosteo is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Libreosteo is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Libreosteo.  If not, see <http://www.gnu.org/licenses/>.
+*/
+* { margin: 0; padding: 0; }
+
+body {
+	font:16px/1.4 Georgia, serif;
+}
+
+#page_wrap {
+	width: 800px;
+	margin : 0 auto;
+}
+
+#header {
+	margin : 25px 0;
+	float:none;
+}
+.frame {
+	float: left;
+}
+.header {
+	font : 24px bold;
+}
+.therapeut_name {
+	font-size: : 20px;
+	font-weight: bold;
+}
+
+.etiopathe {
+	font : 14px bolder;
+}
+
+.address {
+	font-size : 14px;
+}
+.phone {
+	font-size : 14px;
+}
+.therapeut-frame {
+	float:right;
+}
+.therapeut{
+	padding-top: 12px;
+}
+.spacer{
+	clear:both;
+}
+
+#patient {
+	margin-top: 50px;
+	margin-bottom: 100px;
+	float: right;
+
+}
+
+#location-date {
+	float:left;
+	margin-top: 50px;
+}
+#invoice-number {
+	margin-bottom: 50px;
+	font-weight: bold;
+}
+
+#main {
+	clear: both;
+	margin-top: 150px;
+	margin-left: 100px;
+	margin-bottom: 100px;
+}
+
+.fees {
+	margin-top : 50px;
+	margin-bottom : 50px;
+	border:1px solid black;
+	border-collapse: collapse;
+	vertical-align:middle;
+	text-align: center;
+	width:50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.dateMid {
+	margin-top : 50px;
+	margin-bottom : 50px;
+	vertical-align:left;
+	text-align: left;
+	width: 160px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.facture {
+	margin-top : 50px;
+	margin-bottom : 50px;
+	vertical-align:middle;
+	text-align: left;
+	width:150px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.facture-text {
+	font-size: 23px;
+	font-weight: bold;
+}
+
+.soussigne {
+	margin-top : 50px;
+	margin-bottom : 50px;
+	vertical-align:middle;
+	text-align: left;
+	width:280px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.corp {
+	margin-top : 50px;
+	margin-bottom : 50px;
+	vertical-align:middle;
+	text-align: left;
+	width:350px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.fees td {
+	text-align: center;
+	padding-bottom: 2em;
+	padding-top: 2em;
+	border: 1px solid black;
+}
+
+#footer {
+	margin-top: 180px;
+	margin-left: 100px;
+	font-size: 12px;
+	font-style: italic;
+}
+
+.espace {
+	line-height: 40px !important;
+}

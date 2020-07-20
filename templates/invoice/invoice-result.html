@@ -1,0 +1,77 @@
+{% load i18n %}
+{% load l10n %}
+{% load invoice_extras %}
+<html>
+<head>
+	<title>Invoice</title>
+	<link rel="stylesheet" href="{{ STATIC_URL }}css/invoice-style.css" type="text/css">
+	<link rel="stylesheet" href="{{ STATIC_URL}}/font-awesome/css/font-awesome.min.css">
+
+</head>
+<body>
+	<div id="page_wrap">
+		<div id="header">
+			<div id="title">
+					<div class="frame">
+						<span class=""><img src="{{ invoice.icon }}" height="100vw"></span><br/><br/>
+						<span class="therapeut_name">{{ invoice.therapeut_name}} {{invoice.therapeut_first_name}}</span><br/>
+						<span class="therapeut">{{ invoice.quality }}</span><br/><br/>
+						<hr/><br/>
+						<span></span>
+						<span>Membre du Registre National des Etiopathes</span><br/>
+						<span>N° {{ invoice.numDiplome}}</span><br/>
+						<span>Membre de l'Institut Francais d'Etiopathie</span><br/>
+						<span class="siret">N° SIRET {{ invoice.office_siret }}</span><br/>
+						<span>Code APE {{ invoice.codeAPE}}</span><br/><br/>
+						<hr/><br/>
+						<span class="address">{{ invoice.office_address_street}}</span><br/>
+						{% if invoice.office_address_complement|length > 0 %}
+						<span class="address">{{ invoice.office_address_complement}}</span><br/>
+						{% endif %}
+						<span class="address">{{ invoice.office_address_zipcode}} {{ invoice.office_address_city}}</span><br/>
+						<span class="phone">Tél : {{ invoice.office_phone }}</span>
+
+					</div>
+					<div class="spacer"></div>
+			</div>
+		</div>
+
+
+
+		<div class="dateMid">
+			<p>
+				<span>{{ invoice.location}},</span><br/>
+				<span>Le {{ invoice.date | date:"d F Y" }}</span><br/><br/>
+			</p>
+		</div>
+
+		<div class="facture">
+			<p>
+				<span class="facture-text">FACTURE</span><br/><br/>
+			</p>
+		</div>
+
+		<div class="soussigne">
+			<p>
+				<span>{{ invoice.content_invoice}}</span>
+			</p>
+		</div>
+
+
+		<div class="corp">
+			<p>
+				<span>M.mme {{ invoice.patient_first_name }} {{invoice.patient_family_name}}</span><br/>
+				<span>Numéro Sécurité Sociale {{ invoice.numSS }}</span><br/>
+				<span>Numéro de Mutuelle {{ invoice.numMut }}</span><br/>
+				<span>La somme de {{invoice.amount|floatformat:2 }} {{invoice.currency}}</span><br/>
+				<span>Pour 1 intervention (s) en étiopathie </span><br/>
+				<span>Le {{ invoice.dateExamination}}</span><br/><br/><br/>
+			</p>
+		</div>
+
+		<div id="footer">
+			<p>{{ invoice.footer | linebreaksbr  }}</p>
+		</div>
+	</div>
+</body>
+</html>
