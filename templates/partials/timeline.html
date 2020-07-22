@@ -1,13 +1,8 @@
 {% load i18n %}
 <div ng-switch="examinations.length > 0">
-
-    <div style="margin-top:20px">
-        <button id="new-examination-btn" class="btn btn-primary center-block"
-                    ng-click="startExamination()" ng-disabled="examinationIsActive">{% trans 'Start an examination' %}</button>
-    </div>
     <ul class="timeline" ng-switch-when="true">
         <li ng-repeat="examination in examinations" ng-class="{'timeline-inverted': examination.order %2 == 0 }">
-            <div class="timeline-badge" 
+            <div class="timeline-badge"
                 ng-class="{'success' : examination.type == 1, 'warning' : examination.type == 2, 'danger' : examination.type >= 3 }"
                 ng-click="loadExamination(examination.id)" ui-sref="patient.examination({examinationId :  examination.id })">
                 <i class="fa"
@@ -49,7 +44,7 @@
                     </div>
                 </div>
             </div>
-            
+
         </li>
     </ul>
     <div ng-switch-default class="no-session bg-warning">

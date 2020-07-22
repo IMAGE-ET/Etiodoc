@@ -4,6 +4,10 @@
     <span ng-show="patient.original_name || form.patientForm.$visible">(<span blur="submit" e-name="original_name" e-placeholder="{{ patient.original_name }}" e-form="originalNameInput" buttons="no" editable-text="patient.original_name" onaftersave="savePatient()">{$ patient.original_name $}</span>)
     </span>
     <span editable-text="patient.first_name" onaftersave="savePatient()">{$ patient.first_name $}</span>
+    <div style="margin-top:20px">
+        <button id="new-examination-btn" class="btn btn-primary center-block"
+                    ng-click="startExamination()" ng-disabled="examinationIsActive">{% trans 'Start an examination' %}</button>
+    </div>
 </h1>
 
 <uib-tabset active="indexTab">
