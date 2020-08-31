@@ -11,8 +11,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Libreosteo</title>
-    {% compress css %} 
+    <title>Etiodoc</title>
+    {% compress css %}
     <!-- Core CSS - Include with every page -->
     <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
     <link href="{% static "font-awesome/css/font-awesome.min.css" %}" rel="stylesheet">
@@ -49,7 +49,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="/">Libreosteo</a>
+    <a class="navbar-brand" href="/">Etiodoc</a>
 </div>
 <!-- /.navbar-header -->
 
@@ -83,23 +83,6 @@
     </ul>
     <!-- /.dropdown-user -->
 </li>
-<li class="dropdown">
-    <a href="#" target="_self" class="dropdown-toggle" data-toggle="dropdown" id="user-toggle" aria-haspopup="true" role="button" aria-expanded="false">
-      <i class="fa fa-question-circle fa-fw"></i><i class="fa fa-caret-down"></i><span class="sr-only">{% trans "Help" %}</span>
-      {% if new_version_available %}
-        <span class="badge badge-info">1<span>
-      {% endif %}
-    </a>
-    <ul class="dropdown-menu">
-        <li><a href="http://libreosteo.github.io/" target="_blank"><i class="fa fa-globe fa-fw"></i> {% trans 'Project web page' %}</a></li>
-        <li><a href="http://libreosteo.forumcrea.com" target="_blank"><i class="fa fa-comment fa-fw"></i> {% trans "Community support (forum)" %}</a></li>
-        <li><a href="https://github.com/libreosteo/Libreosteo/" target="_blank"><i class="fa fa-comment fa-github"></i> {% trans "Development and code project" %}</a></li>
-        <li class="divider"></li>
-        <li class="disabled"><a href="#"><i class="fa fa-info-circle fa-fw"></i> {% trans 'Version' %} {{ version }}</a></li>
-        {% if new_version_available %}
-        <li class="bg-success"><a href="http://libreosteo.github.io/" target="_blank"><i class="fa fa-star fa-fw"></i> {% trans 'New version available' %} {{ new_version }}</a></li>
-        {% endif %}
-        </li>
     </ul>
 </li>
 <!-- /.dropdown -->

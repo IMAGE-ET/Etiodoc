@@ -358,7 +358,7 @@ input.ng-invalid-email,
 input.ng-invalid,
 input.ng-invalid-email:focus,
 input.ng-invalid:focus {
-  color: #a94442; 
+  color: #a94442;
   border-color: #a94442;
 }
 
@@ -369,3 +369,164 @@ input.ng-invalid:focus {
 
 }
 
+}
+.maindiv {
+  height: 50vw;
+}
+
+.svgtete {
+  height: 10vw;
+}
+
+.svgbras {
+  height: 30vw;
+}
+
+.svgcote {
+  height: 20vw;
+}
+
+.svgjambe {
+  height: 38vw;
+}
+
+.svgcolonne {
+  height: 35vw;
+}
+
+.relative1 {
+  position: relative;
+  left: 15vw;
+  max-width: 25vw;
+}
+
+.relative2 {
+  position: relative;
+  left: 6vw;
+}
+
+.relative3 {
+  position: relative;
+  left: 8vw;
+  max-width: 25vw;
+}
+
+svg {
+  fill: #d3d3d3;
+  transition: .6s fill;
+}
+
+path:focus {
+  fill: #CD5C5C;
+}
+
+
+.couleurclick {
+  fill: #CD5C5C;
+}
+.selectCrane {
+  fill: #F25C54;
+}
+.selectATMD {
+  fill: #CD5C5C;
+}
+.selectATMG {
+  fill: #CD5C5C;
+}
+.selectEpaule {
+  fill: #FFADAD;
+}
+.selectBras {
+  fill: #CD5C5C;
+}
+.selectCoude {
+  fill: #FFD6A5;
+}
+.selectPoignet {
+  fill: #ffd461;
+}
+.selectMain {
+  fill: #CD5C5C;
+}
+.selectCote {
+  fill: #CD5C5C;
+}
+.selectSternum {
+  fill: #CD5C5C;
+}
+.selectCervicale {
+  fill: #a0c4ff;
+}
+.selectThoracique {
+  fill: #048BA8;
+}
+.selectLombaire {
+  fill: #0DB39E;
+}
+.selectBassin {
+  fill: #CD5C5C;
+}
+.selectScrolliaqueG {
+  fill: #CD5C5C;
+}
+.selectScrolliaqueD {
+  fill: #CD5C5C;
+}
+.selectHanche {
+  fill: #6fa7e2;
+}
+.selectJambe {
+  fill: #CD5C5C;
+}
+.selectGenou {
+  fill: #BDB2FF;
+}
+.selectCheville {
+  fill: #ff98be;
+}
+.selectPied {
+  fill: #CD5C5C;
+}
+
+.selectSacrum {
+  fill: #b0d58e;
+}
+
+.couleurclickCervicale {
+  fill: #a0c4ff;
+}
+.couleurclickThoracique {
+  fill: #048BA8;
+}
+.couleurclickLombaire {
+  fill: #0DB39E;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.maDiv {
+  min-width: 45vw;
+}
+
+.toggleDiv {
+  min-width: 43vw;
+  float: right;
+}
+
+.hide {
+  display: none;
+}
+
+.nothide {
+  display: block !important;
+}
