@@ -1,5 +1,6 @@
 # Database
 db.sqlite3
+/Bdd_save/
 
 # Python compiled files
 *.pyc
