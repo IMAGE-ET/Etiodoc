@@ -99,61 +99,7 @@
       </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col-md-3">
-      <!-- the button command -->
-      <div class="btn-group btn-group-vertical">
-        <div class="col-md-12 btn-group">
-          <label class="btn btn-default" ng-model="examinationSettings.orl" uib-btn-checkbox>{{ examination.orl }}</label>
-        </div>
-        <div class="col-md-12 btn-group">
-          <label class="btn btn-default" ng-model="examinationSettings.visceral" uib-btn-checkbox>{{ examination.visceral }}</label>
-        </div>
-        <div class="col-md-12 btn-group">
-          <label class="btn btn-default" ng-model="examinationSettings.pulmo" uib-btn-checkbox>{{ examination.pulmo }}</label>
-        </div>
-        <div class="col-md-12 btn-group">
-          <label class="btn btn-default" ng-model="examinationSettings.uro_gyneco" uib-btn-checkbox>{{ examination.uro_gyneco }}</label>
-        </div>
-        <div class="col-md-12 btn-group">
-          <label class="btn btn-default" ng-model="examinationSettings.periphery" uib-btn-checkbox>{{ examination.periphery }}</label>
-        </div>
-        <div class="col-md-12 btn-group">
-          <label class="btn btn-default" ng-model="examinationSettings.general_state" uib-btn-checkbox>{{ examination.general_state }}</label>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-9">
-      <!-- The accordion -->
-      <div uib-accordion close-others="false">
-        <div uib-accordion-group heading="{{ examination.orl }}" class="panel-primary panel-sphere" ng-show="examinationSettings.orl" is-open="accordionOpenState.orl">
-          <div hallo-editor ng-model="model.orl" placeholder="'{{ examination.orl }}'" is-editable="editableForm.$visible"></div>
-        </div>
-
-        <div uib-accordion-group heading="{{ examination.visceral }}" class="panel-primary panel-sphere" ng-show="examinationSettings.visceral" is-open="accordionOpenState.visceral">
-          <div hallo-editor ng-model="model.visceral" placeholder="'{{ examination.visceral }}'" is-editable="editableForm.$visible"></div>
-        </div>
-
-        <div uib-accordion-group heading="{{ examination.pulmo }}" class="panel-primary panel-sphere " ng-show="examinationSettings.pulmo" is-open="accordionOpenState.pulmo">
-          <div hallo-editor ng-model="model.pulmo" placeholder="'{{ examination.pulmo }}'" is-editable="editableForm.$visible"></div>
-        </div>
-
-        <div uib-accordion-group heading="{{ examination.uro_gyneco }}" class="panel-primary panel-sphere" ng-show="examinationSettings.uro_gyneco" is-open="accordionOpenState.uro_gyneco">
-          <div hallo-editor ng-model="model.uro_gyneco" placeholder="'{{ examination.uro_gyneco }}'" is-editable="editableForm.$visible"></div>
-        </div>
-
-        <div uib-accordion-group heading="{{ examination.periphery }}" class="panel-primary panel-sphere" ng-show="examinationSettings.periphery" is-open="accordionOpenState.periphery">
-          <div hallo-editor ng-model="model.periphery" placeholder="'{{ examination.periphery }}'" is-editable="editableForm.$visible"></div>
-        </div>
-
-        <div uib-accordion-group heading="{{ examination.general_state }}" class="panel-primary panel-sphere" ng-show="examinationSettings.general_state" is-open="accordionOpenState.general_state">
-          <div hallo-editor ng-model="model.general_state" placeholder="'{{ examination.general_state }}'" is-editable="editableForm.$visible"></div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
+  
 
   <div class="row" style="padding-top:15px">
     <div class="col-md-12">
