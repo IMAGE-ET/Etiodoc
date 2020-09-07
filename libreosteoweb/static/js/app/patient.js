@@ -530,6 +530,10 @@ patient.controller('PatientCtrl', ['$scope', '$state', '$stateParams', '$filter'
         value: 'R',
         text: gettext('Right-handed')
       },
+      {
+        value: 'A',
+        text: gettext('Ambidextre')
+      },
     ];
 
     // display the translated value for the sex
