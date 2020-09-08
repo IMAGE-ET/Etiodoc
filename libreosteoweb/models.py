@@ -156,7 +156,7 @@ class Examination(models.Model):
     OsZygomatiqueD = models.TextField(_('Os zygomatique droit'), blank=True)
     MaxilaireSup = models.TextField(_('Maxillaire supérieur'), blank=True)
     OsNez = models.TextField(_('Os propre du nez'), blank=True)
-    Mandible = models.TextField(_('Mandible'), blank=True)
+    Mandible = models.TextField(_('Mandibule'), blank=True)
     OsZygomatiqueG = models.TextField(_('Os zygomatique gauche'), blank=True)
     OsTempG = models.TextField(_('Os temporal gauche'), blank=True)
     SphenoideG = models.TextField(_('Sphénoïde, grande aile Gauche'), blank=True)
