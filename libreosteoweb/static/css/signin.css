@@ -18,6 +18,13 @@ body {
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: #eee;
+  background-image: url("shutterstock_345190283.jpg");
+  /*background-size: 100%;*/
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
 }
 
 .form-wrapper {padding-bottom: 20px;}
@@ -119,4 +126,14 @@ body {
 
 .td-middle{
   vertical-align: middle;
+}
+
+footer{
+
+  position:absolute;
+
+  bottom:0;
+  right:0;
+  font-size: 80%;
+
 }

@@ -114,7 +114,7 @@ examination.directive('examination', ['ExaminationServ', function(ExaminationSer
       }
 
     },
-    controller: ['$scope', '$filter', '$window', 'growl', '$q', '$timeout', 'InvoiceService', '$uibModal', function($scope, $filter, $window, growl, $q, $timeout, InvoiceService, $uibModal) {
+    controller: ['$scope', '$filter', '$window', 'growl', '$q', '$timeout', 'InvoiceService', '$uibModal', '$parse', function($scope, $filter, $window, growl, $q, $timeout, InvoiceService, $uibModal, $parse) {
       $scope.types = [{
           value: 1,
           text: gettext('Normal examination')
@@ -142,6 +142,23 @@ examination.directive('examination', ['ExaminationServ', function(ExaminationSer
           return gettext('not documented');
         }
       };
+
+      $scope.toggleSwitch = function(theString, length) {
+        //console.log(modal);
+        var modal = $parse(theString);
+        //console.log(modal);
+        if (length > 0) {
+          modal.assign($scope, "");
+        }
+        else {
+          modal.assign($scope, "&#30;");
+        }
+        console.log(length);
+
+      };
+
+
+      console.log($scope.model.Crane);
 
       $scope.examinationSettings = {
         orl: false,

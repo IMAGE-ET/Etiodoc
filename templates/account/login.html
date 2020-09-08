@@ -32,7 +32,17 @@
 
       <form class="form-signin" role="form" method="post" action="{% url 'login' %}">
           {% csrf_token %}
-        <h2 class="form-signin-heading">{% trans "Please sign in" %}</h2>
+        <h3 class="form-signin-heading">Bienvenue sur Etiodoc</h3>
+        <div class="well well-lg">
+          <p>Logiciel dédié aux étiopathes.</p>
+          <p>Pour le tester identifier vous à l’aide d’un des identifiants suivants :</p>
+          <ul>
+              <li>test</li>
+              <li>demo</li>
+          </ul>
+          <p>Le mot de passe est identique à l'utilisateur.
+Ainsi l'utilisateur "test" aura pour mot de passe "test".</p>
+        </div>
         {% if demonstration %}
         <div class="well well-lg">
           <p>Pour vous identifier, vous pouvez utiliser 2 utilisateurs enregistrés, le mot de passe est identique à l'utilisateur.
@@ -67,5 +77,11 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
 
+    <footer>
 
-</body></html>
+   <a href="{{ STATIC_URL }}files/mention.html">Mention légale</a>
+
+   </footer>
+</body>
+
+</html>
