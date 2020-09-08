@@ -82,6 +82,7 @@ class Patient(models.Model):
     laterality = models.CharField(_('Laterality'),
                                   max_length=1,
                                   choices=(('L', _('Left-handed')),
+                                           ('A', _('Ambidextre')),
                                            ('R', _('Right-handed'))),
                                   blank=True,
                                   null=True)
