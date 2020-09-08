@@ -13,7 +13,7 @@ libreosteoweb/static/bower_components/
 
 # Indexes
 whoosh_index/
-
+libreosteoweb/static/bower_components/
 
 # IDE Files
 .idea
@@ -24,6 +24,7 @@ whoosh_index/
 .idea
 .project
 .metadata
+.gitignore
 
 # VirtualEnv files
 .env
