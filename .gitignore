@@ -16,6 +16,7 @@ libreosteoweb/static/files/mention.html
 
 # Indexes
 whoosh_index/
+libreosteoweb/static/bower_components/
 
 # IDE Files
 .idea
