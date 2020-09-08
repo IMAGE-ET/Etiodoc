@@ -11,12 +11,13 @@ libreosteoweb/static/bower_components/
 /media/
 /node_modules/
 
+libreosteoweb/static/signin.css
 libreosteoweb/static/files/mention.html
 
 
 # Indexes
 whoosh_index/
-libreosteoweb/static/bower_components/
+/templates/account/login.html
 
 # IDE Files
 .idea
