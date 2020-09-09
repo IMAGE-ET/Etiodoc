@@ -153,12 +153,12 @@ examination.directive('examination', ['ExaminationServ', function(ExaminationSer
         else {
           modal.assign($scope, "&#30;");
         }
-        console.log(length);
+        //console.log(length);
 
       };
 
 
-      console.log($scope.model.Crane);
+      //console.log($scope.model.Crane);
 
       $scope.examinationSettings = {
         orl: false,
