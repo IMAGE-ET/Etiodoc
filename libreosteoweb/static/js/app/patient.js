@@ -176,6 +176,11 @@ patient.controller('PatientCtrl', ['$scope', '$state', '$stateParams', '$filter'
 
     $scope.form = {};
 
+
+    $scope.upper = function(str) {
+       return str.toUpperCase();
+}
+
     // Display the formated age
     $scope.get_age = function() {
       var birthDate = $scope.patient.birth_date;
