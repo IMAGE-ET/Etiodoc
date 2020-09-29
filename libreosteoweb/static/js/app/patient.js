@@ -178,7 +178,10 @@ patient.controller('PatientCtrl', ['$scope', '$state', '$stateParams', '$filter'
 
 
     $scope.upper = function(str) {
-       return str.toUpperCase();
+      if (str !== undefined) {
+        return str.toUpperCase();
+      }
+
 }
 
     // Display the formated age

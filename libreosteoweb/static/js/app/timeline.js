@@ -56,7 +56,7 @@ timeline.directive('timeline', function()
             if ($scope.currentExamination.id == null || $scope.currentExamination.id != examinationId) {
               var panelComment = $(event.target).parents(".timeline-footer").next(".timeline-panel-footer");
 
-              ExaminationCommentServ.query({examinationId : examinationId}, function(data){  
+                ExaminationCommentServ.query({examinationId : examinationId}, function(data){
                 panelComment.toggleClass('hidden');
                 var examination = $scope.examinations.find(function(element, index, array)
                   {
