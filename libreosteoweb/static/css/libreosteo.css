@@ -530,3 +530,7 @@ path:focus {
 .nothide {
   display: block !important;
 }
+
+.colorText {
+  color: #797979;
+}

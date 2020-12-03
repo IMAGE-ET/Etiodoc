@@ -154,7 +154,14 @@ examination.directive('examination', ['ExaminationServ', function(ExaminationSer
           modal.assign($scope, "&#30;");
         }
         //console.log(length);
+      };
 
+      $scope.switchTissu = function() {
+        document.getElementById('mainDiv').hidden = true;
+      };
+
+      $scope.switchSkeleton = function() {
+        document.getElementById('mainDiv').hidden = false;
       };
 
 

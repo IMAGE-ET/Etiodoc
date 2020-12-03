@@ -87,7 +87,7 @@
 
             <div class="col-md-7">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.medical_examination }}</div>
+                <div class="col-md-12 subtitle">{{ examination.medical_examination }}</div>
 
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.medical_examination" placeholder="'{{ examination.medical_examination }}'" is-editable="editableForm.$visible"></div>
@@ -130,12 +130,10 @@
     <div class="col-md-12">
       <div class="panel panel-primary">
         <div class="panel-heading">
-          Anatomie
+          Squelette
         </div>
-        <button type="button" name="button" ng-click="switchSkeleton()">Squelette</button>
-        <button type="button" name="button" ng-click="switchTissu()">Tissus mous</button>
         <div class="panel-body row" style="margin-left: 5px; margin-right: 5px">
-          <div class="maDiv" id="mainDiv" style="float:left;">
+          <div class="maDiv" style="float:left;">
             <!--tete-->
             <div class="relative1">
               <svg class="svgtete" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 548.000000 743.000000" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -2268,7 +2266,7 @@
 
             <div ng-class="{'hide' : !toggle0, 'nothide' : model.Crane != '' && model.Crane}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Crane }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Crane }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Crane" placeholder="'{{ examination.Crane }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2276,7 +2274,7 @@
             </div>
             <div ng-class="{'hide' : !toggle1, 'nothide' : model.OsFrontal != '' && model.OsFrontal}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.OsFrontal }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.OsFrontal }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.OsFrontal" placeholder="'{{ examination.OsFrontal }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2284,7 +2282,7 @@
             </div>
             <div ng-class="{'hide' : !toggle2, 'nothide' : model.OsParietalD != '' && model.OsParietalD}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.OsParietalD }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.OsParietalD }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.OsParietalD" placeholder="'{{ examination.OsParietalD }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2292,7 +2290,7 @@
             </div>
             <div ng-class="{'hide' : !toggle3, 'nothide' : model.OsParietalG != '' && model.OsParietalG}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.OsParietalG }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.OsParietalG }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.OsParietalG" placeholder="'{{ examination.OsParietalG }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2300,7 +2298,7 @@
             </div>
             <div ng-class="{'hide' : !toggle4, 'nothide' : model.SphenoideD != '' && model.SphenoideD}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.SphenoideD }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.SphenoideD }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.SphenoideD" placeholder="'{{ examination.SphenoideD }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2308,7 +2306,7 @@
             </div>
             <div ng-class="{'hide' : !toggle5, 'nothide' : model.SphenoideG != '' && model.SphenoideG}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.SphenoideG }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.SphenoideG }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.SphenoideG" placeholder="'{{ examination.SphenoideG }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2316,7 +2314,7 @@
             </div>
             <div ng-class="{'hide' : !toggle6, 'nothide' : model.OsTempD != '' && model.OsTempD}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.OsTempD }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.OsTempD }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.OsTempD" placeholder="'{{ examination.OsTempD }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2324,7 +2322,7 @@
             </div>
             <div ng-class="{'hide' : !toggle7, 'nothide' : model.OsTempG != '' && model.OsTempG}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.OsTempG }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.OsTempG }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.OsTempG" placeholder="'{{ examination.OsTempG }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2332,7 +2330,7 @@
             </div>
             <div ng-class="{'hide' : !toggle8, 'nothide' : model.OsNez != '' && model.OsNez}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.OsNez }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.OsNez }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.OsNez" placeholder="'{{ examination.OsNez }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2340,7 +2338,7 @@
             </div>
             <div ng-class="{'hide' : !toggle9, 'nothide' : model.OsZygomatiqueD != '' && model.OsZygomatiqueD}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.OsZygomatiqueD }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.OsZygomatiqueD }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.OsZygomatiqueD" placeholder="'{{ examination.OsZygomatiqueD }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2348,7 +2346,7 @@
             </div>
             <div ng-class="{'hide' : !toggle10, 'nothide' : model.OsZygomatiqueG != '' && model.OsZygomatiqueG}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.OsZygomatiqueG }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.OsZygomatiqueG }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.OsZygomatiqueG" placeholder="'{{ examination.OsZygomatiqueG }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2356,7 +2354,7 @@
             </div>
             <div ng-class="{'hide' : !toggle11, 'nothide' : model.MaxilaireSup != '' && model.MaxilaireSup}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.MaxilaireSup }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.MaxilaireSup }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.MaxilaireSup" placeholder="'{{ examination.MaxilaireSup }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2364,7 +2362,7 @@
             </div>
             <div ng-class="{'hide' : !toggle12, 'nothide' : model.Mandible != '' && model.Mandible}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Mandible }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Mandible }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Mandible" placeholder="'{{ examination.Mandible }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2372,7 +2370,7 @@
             </div>
             <div ng-class="{'hide' : !toggle13, 'nothide' : model.AtmD != '' && model.AtmD}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.AtmD }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.AtmD }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.AtmD" placeholder="'{{ examination.AtmD }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2380,7 +2378,7 @@
             </div>
             <div ng-class="{'hide' : !toggle14, 'nothide' : model.AtmG != '' && model.AtmG}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.AtmG }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.AtmG }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.AtmG" placeholder="'{{ examination.AtmG }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2612,7 +2610,7 @@
             </div>
             <div ng-class="{'hide' : !toggle43, 'nothide' : model.EpauleD != '' && model.EpauleD}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.EpauleD }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.EpauleD }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.EpauleD" placeholder="'{{ examination.EpauleD }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2620,7 +2618,7 @@
             </div>
             <div ng-class="{'hide' : !toggle44, 'nothide' : model.ClaviculeD != '' && model.ClaviculeD}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.ClaviculeD }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.ClaviculeD }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.ClaviculeD" placeholder="'{{ examination.ClaviculeD }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2628,7 +2626,7 @@
             </div>
             <div ng-class="{'hide' : !toggle45, 'nothide' : model.OmoplateD != '' && model.OmoplateD}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.OmoplateD }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.OmoplateD }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.OmoplateD" placeholder="'{{ examination.OmoplateD }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2636,7 +2634,7 @@
             </div>
             <div ng-class="{'hide' : !toggle46, 'nothide' : model.HumerusD != '' && model.HumerusD}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.HumerusD }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.HumerusD }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.HumerusD" placeholder="'{{ examination.HumerusD }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2644,7 +2642,7 @@
             </div>
             <div ng-class="{'hide' : !toggle47, 'nothide' : model.BrasD != '' && model.BrasD}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.BrasD }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.BrasD }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.BrasD" placeholder="'{{ examination.BrasD }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2652,7 +2650,7 @@
             </div>
             <div ng-class="{'hide' : !toggle48, 'nothide' : model.CoudeD != '' && model.CoudeD}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.CoudeD }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.CoudeD }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.CoudeD" placeholder="'{{ examination.CoudeD }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2660,7 +2658,7 @@
             </div>
             <div ng-class="{'hide' : !toggle49, 'nothide' : model.CubitusD != '' && model.CubitusD}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.CubitusD }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.CubitusD }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.CubitusD" placeholder="'{{ examination.CubitusD }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2668,7 +2666,7 @@
             </div>
             <div ng-class="{'hide' : !toggle50, 'nothide' : model.RadiusD != '' && model.RadiusD}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.RadiusD }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.RadiusD }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.RadiusD" placeholder="'{{ examination.RadiusD }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2676,7 +2674,7 @@
             </div>
             <div ng-class="{'hide' : !toggle51, 'nothide' : model.PoignetD != '' && model.PoignetD}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.PoignetD }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.PoignetD }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.PoignetD" placeholder="'{{ examination.PoignetD }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2684,7 +2682,7 @@
             </div>
             <div ng-class="{'hide' : !toggle52, 'nothide' : model.SemiLunaireD != '' && model.SemiLunaireD}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.SemiLunaireD }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.SemiLunaireD }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.SemiLunaireD" placeholder="'{{ examination.SemiLunaireD }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2692,7 +2690,7 @@
             </div>
             <div ng-class="{'hide' : !toggle53, 'nothide' : model.ScaphoideD != '' && model.ScaphoideD}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.ScaphoideD }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.ScaphoideD }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.ScaphoideD" placeholder="'{{ examination.ScaphoideD }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2700,7 +2698,7 @@
             </div>
             <div ng-class="{'hide' : !toggle54, 'nothide' : model.PyramidalD != '' && model.PyramidalD}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.PyramidalD }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.PyramidalD }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.PyramidalD" placeholder="'{{ examination.PyramidalD }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2708,7 +2706,7 @@
             </div>
             <div ng-class="{'hide' : !toggle55, 'nothide' : model.GrandOsD != '' && model.GrandOsD}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.GrandOsD }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.GrandOsD }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.GrandOsD" placeholder="'{{ examination.GrandOsD }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2716,7 +2714,7 @@
             </div>
             <div ng-class="{'hide' : !toggle56, 'nothide' : model.TrapezeD != '' && model.TrapezeD}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.TrapezeD }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.TrapezeD }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.TrapezeD" placeholder="'{{ examination.TrapezeD }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2724,7 +2722,7 @@
             </div>
             <div ng-class="{'hide' : !toggle57, 'nothide' : model.OsCrochuD != '' && model.OsCrochuD}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.OsCrochuD }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.OsCrochuD }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.OsCrochuD" placeholder="'{{ examination.OsCrochuD }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2732,7 +2730,7 @@
             </div>
             <div ng-class="{'hide' : !toggle58, 'nothide' : model.Metacarpe1D != '' && model.Metacarpe1D}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Metacarpe1D }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Metacarpe1D }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Metacarpe1D" placeholder="'{{ examination.Metacarpe1D }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2740,7 +2738,7 @@
             </div>
             <div ng-class="{'hide' : !toggle59, 'nothide' : model.TrapezoideD != '' && model.TrapezoideD}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.TrapezoideD }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.TrapezoideD }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.TrapezoideD" placeholder="'{{ examination.TrapezoideD }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2748,7 +2746,7 @@
             </div>
             <div ng-class="{'hide' : !toggle60, 'nothide' : model.PisiformeD != '' && model.PisiformeD}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.PisiformeD }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.PisiformeD }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.PisiformeD" placeholder="'{{ examination.PisiformeD }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2756,7 +2754,7 @@
             </div>
             <div ng-class="{'hide' : !toggle61, 'nothide' : model.Metacarpe5D != '' && model.Metacarpe5D}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Metacarpe5D }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Metacarpe5D }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Metacarpe5D" placeholder="'{{ examination.Metacarpe5D }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2764,7 +2762,7 @@
             </div>
             <div ng-class="{'hide' : !toggle62, 'nothide' : model.Metacarpe4D != '' && model.Metacarpe4D}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Metacarpe4D }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Metacarpe4D }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Metacarpe4D" placeholder="'{{ examination.Metacarpe4D }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2772,7 +2770,7 @@
             </div>
             <div ng-class="{'hide' : !toggle63, 'nothide' : model.Metacarpe2D != '' && model.Metacarpe2D}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Metacarpe2D }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Metacarpe2D }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Metacarpe2D" placeholder="'{{ examination.Metacarpe2D }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2780,7 +2778,7 @@
             </div>
             <div ng-class="{'hide' : !toggle64, 'nothide' : model.Metacarpe3D != '' && model.Metacarpe3D}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Metacarpe3D }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Metacarpe3D }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Metacarpe3D" placeholder="'{{ examination.Metacarpe3D }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2788,7 +2786,7 @@
             </div>
             <div ng-class="{'hide' : !toggle65, 'nothide' : model.P3PouceD != '' && model.P3PouceD}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.P3PouceD }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.P3PouceD }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.P3PouceD" placeholder="'{{ examination.P3PouceD }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2796,7 +2794,7 @@
             </div>
             <div ng-class="{'hide' : !toggle66, 'nothide' : model.P1Seg5D != '' && model.P1Seg5D}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.P1Seg5D }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.P1Seg5D }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.P1Seg5D" placeholder="'{{ examination.P1Seg5D }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2804,7 +2802,7 @@
             </div>
             <div ng-class="{'hide' : !toggle67, 'nothide' : model.P1Seg4D != '' && model.P1Seg4D}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.P1Seg4D }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.P1Seg4D }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.P1Seg4D" placeholder="'{{ examination.P1Seg4D }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2812,7 +2810,7 @@
             </div>
             <div ng-class="{'hide' : !toggle68, 'nothide' : model.P1Seg3D != '' && model.P1Seg3D}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.P1Seg3D }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.P1Seg3D }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.P1Seg3D" placeholder="'{{ examination.P1Seg3D }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2820,7 +2818,7 @@
             </div>
             <div ng-class="{'hide' : !toggle69, 'nothide' : model.P1PouceD != '' && model.P1PouceD}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.P1PouceD }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.P1PouceD }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.P1PouceD" placeholder="'{{ examination.P1PouceD }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2828,7 +2826,7 @@
             </div>
             <div ng-class="{'hide' : !toggle70, 'nothide' : model.P1Seg2D != '' && model.P1Seg2D}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.P1Seg2D }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.P1Seg2D }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.P1Seg2D" placeholder="'{{ examination.P1Seg2D }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2836,7 +2834,7 @@
             </div>
             <div ng-class="{'hide' : !toggle71, 'nothide' : model.P2Seg5D != '' && model.P2Seg5D}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.P2Seg5D }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.P2Seg5D }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.P2Seg5D" placeholder="'{{ examination.P2Seg5D }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2844,7 +2842,7 @@
             </div>
             <div ng-class="{'hide' : !toggle72, 'nothide' : model.P2Seg4D != '' && model.P2Seg4D}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.P2Seg4D }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.P2Seg4D }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.P2Seg4D" placeholder="'{{ examination.P2Seg4D }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2852,7 +2850,7 @@
             </div>
             <div ng-class="{'hide' : !toggle73, 'nothide' : model.P3Seg5D != '' && model.P3Seg5D}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.P3Seg5D }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.P3Seg5D }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.P3Seg5D" placeholder="'{{ examination.P3Seg5D }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2860,7 +2858,7 @@
             </div>
             <div ng-class="{'hide' : !toggle74, 'nothide' : model.P2Seg3D != '' && model.P2Seg3D}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.P2Seg3D }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.P2Seg3D }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.P2Seg3D" placeholder="'{{ examination.P2Seg3D }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2868,7 +2866,7 @@
             </div>
             <div ng-class="{'hide' : !toggle75, 'nothide' : model.P2Seg2D != '' && model.P2Seg2D}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.P2Seg2D }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.P2Seg2D }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.P2Seg2D" placeholder="'{{ examination.P2Seg2D }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2876,7 +2874,7 @@
             </div>
             <div ng-class="{'hide' : !toggle76, 'nothide' : model.P3Seg4D != '' && model.P3Seg4D}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.P3Seg4D }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.P3Seg4D }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.P3Seg4D" placeholder="'{{ examination.P3Seg4D }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2884,7 +2882,7 @@
             </div>
             <div ng-class="{'hide' : !toggle77, 'nothide' : model.MainD != '' && model.MainD}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.MainD }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.MainD }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.MainD" placeholder="'{{ examination.MainD }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2892,7 +2890,7 @@
             </div>
             <div ng-class="{'hide' : !toggle78, 'nothide' : model.P3Seg2D != '' && model.P3Seg2D}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.P3Seg2D }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.P3Seg2D }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.P3Seg2D" placeholder="'{{ examination.P3Seg2D }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2900,7 +2898,7 @@
             </div>
             <div ng-class="{'hide' : !toggle79, 'nothide' : model.P3Seg3D != '' && model.P3Seg3D}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.P3Seg3D }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.P3Seg3D }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.P3Seg3D" placeholder="'{{ examination.P3Seg3D }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2908,7 +2906,7 @@
             </div>
             <div ng-class="{'hide' : !toggle80, 'nothide' : model.Cote1D != '' && model.Cote1D}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Cote1D }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Cote1D }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Cote1D" placeholder="'{{ examination.Cote1D }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2916,7 +2914,7 @@
             </div>
             <div ng-class="{'hide' : !toggle81, 'nothide' : model.Cote1G != '' && model.Cote1G}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Cote1G }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Cote1G }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Cote1G" placeholder="'{{ examination.Cote1G }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2924,7 +2922,7 @@
             </div>
             <div ng-class="{'hide' : !toggle82, 'nothide' : model.Cote2D != '' && model.Cote2D}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Cote2D }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Cote2D }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Cote2D" placeholder="'{{ examination.Cote2D }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2932,7 +2930,7 @@
             </div>
             <div ng-class="{'hide' : !toggle83, 'nothide' : model.Cote2G != '' && model.Cote2G}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Cote2G }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Cote2G }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Cote2G" placeholder="'{{ examination.Cote2G }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2940,7 +2938,7 @@
             </div>
             <div ng-class="{'hide' : !toggle84, 'nothide' : model.GrilCostalD != '' && model.GrilCostalD}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.GrilCostalD }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.GrilCostalD }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.GrilCostalD" placeholder="'{{ examination.GrilCostalD }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2948,7 +2946,7 @@
             </div>
             <div ng-class="{'hide' : !toggle85, 'nothide' : model.GrilCostalG != '' && model.GrilCostalG}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.GrilCostalG }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.GrilCostalG }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.GrilCostalG" placeholder="'{{ examination.GrilCostalG }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2956,7 +2954,7 @@
             </div>
             <div ng-class="{'hide' : !toggle86, 'nothide' : model.Manubrium != '' && model.Manubrium}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Manubrium }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Manubrium }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Manubrium" placeholder="'{{ examination.Manubrium }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2964,7 +2962,7 @@
             </div>
             <div ng-class="{'hide' : !toggle87, 'nothide' : model.Cote3D != '' && model.Cote3D}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Cote3D }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Cote3D }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Cote3D" placeholder="'{{ examination.Cote3D }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2972,7 +2970,7 @@
             </div>
             <div ng-class="{'hide' : !toggle88, 'nothide' : model.Cote3G != '' && model.Cote3G}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Cote3G }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Cote3G }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Cote3G" placeholder="'{{ examination.Cote3G }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2980,7 +2978,7 @@
             </div>
             <div ng-class="{'hide' : !toggle89, 'nothide' : model.CorpsSternal != '' && model.CorpsSternal}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.CorpsSternal }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.CorpsSternal }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.CorpsSternal" placeholder="'{{ examination.CorpsSternal }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2988,7 +2986,7 @@
             </div>
             <div ng-class="{'hide' : !toggle90, 'nothide' : model.Cote4G != '' && model.Cote4G}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Cote4G }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Cote4G }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Cote4G" placeholder="'{{ examination.Cote4G }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -2996,7 +2994,7 @@
             </div>
             <div ng-class="{'hide' : !toggle91, 'nothide' : model.Cote4D != '' && model.Cote4D}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Cote4D }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Cote4D }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Cote4D" placeholder="'{{ examination.Cote4D }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3004,7 +3002,7 @@
             </div>
             <div ng-class="{'hide' : !toggle92, 'nothide' : model.Cote5G != '' && model.Cote5G}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Cote5G }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Cote5G }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Cote5G" placeholder="'{{ examination.Cote5G }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3012,7 +3010,7 @@
             </div>
             <div ng-class="{'hide' : !toggle93, 'nothide' : model.Cote5D != '' && model.Cote5D}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Cote5D }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Cote5D }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Cote5D" placeholder="'{{ examination.Cote5D }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3020,7 +3018,7 @@
             </div>
             <div ng-class="{'hide' : !toggle94, 'nothide' : model.Cote6D != '' && model.Cote6D}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Cote6D }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Cote6D }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Cote6D" placeholder="'{{ examination.Cote6D }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3028,7 +3026,7 @@
             </div>
             <div ng-class="{'hide' : !toggle95, 'nothide' : model.Cote6G != '' && model.Cote6G}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Cote6G }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Cote6G }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Cote6G" placeholder="'{{ examination.Cote6G }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3036,7 +3034,7 @@
             </div>
             <div ng-class="{'hide' : !toggle96, 'nothide' : model.Cote7D != '' && model.Cote7D}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Cote7D }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Cote7D }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Cote7D" placeholder="'{{ examination.Cote7D }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3044,7 +3042,7 @@
             </div>
             <div ng-class="{'hide' : !toggle97, 'nothide' : model.Cote7G != '' && model.Cote7G}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Cote7G }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Cote7G }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Cote7G" placeholder="'{{ examination.Cote7G }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3052,7 +3050,7 @@
             </div>
             <div ng-class="{'hide' : !toggle98, 'nothide' : model.ProcessusXiphoide != '' && model.ProcessusXiphoide}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.ProcessusXiphoide }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.ProcessusXiphoide }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.ProcessusXiphoide" placeholder="'{{ examination.ProcessusXiphoide }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3060,7 +3058,7 @@
             </div>
             <div ng-class="{'hide' : !toggle99, 'nothide' : model.Cote8D != '' && model.Cote8D}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Cote8D }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Cote8D }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Cote8D" placeholder="'{{ examination.Cote8D }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3068,7 +3066,7 @@
             </div>
             <div ng-class="{'hide' : !toggle100, 'nothide' : model.Cote8G != '' &&  model.Cote8G}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Cote8G }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Cote8G }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Cote8G" placeholder="'{{ examination.Cote8G }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3076,7 +3074,7 @@
             </div>
             <div ng-class="{'hide' : !toggle101, 'nothide' : model.Sternum != '' && model.Sternum}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Sternum }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Sternum }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Sternum" placeholder="'{{ examination.Sternum }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3084,7 +3082,7 @@
             </div>
             <div ng-class="{'hide' : !toggle102, 'nothide' : model.Cote9D != '' && model.Cote9D}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Cote9D }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Cote9D }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Cote9D" placeholder="'{{ examination.Cote9D }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3092,7 +3090,7 @@
             </div>
             <div ng-class="{'hide' : !toggle103, 'nothide' : model.Cote9G != '' && model.Cote9G}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Cote9G }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Cote9G }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Cote9G" placeholder="'{{ examination.Cote9G }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3100,7 +3098,7 @@
             </div>
             <div ng-class="{'hide' : !toggle104, 'nothide' : model.Cote10G != '' && model.Cote10G}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Cote10G }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Cote10G }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Cote10G" placeholder="'{{ examination.Cote10G }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3108,7 +3106,7 @@
             </div>
             <div ng-class="{'hide' : !toggle105, 'nothide' : model.Cote10D != '' && model.Cote10D}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Cote10D }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Cote10D }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Cote10D" placeholder="'{{ examination.Cote10D }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3116,7 +3114,7 @@
             </div>
             <div ng-class="{'hide' : !toggle106, 'nothide' : model.Cote11D != '' && model.Cote11D}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Cote11D }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Cote11D }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Cote11D" placeholder="'{{ examination.Cote11D }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3124,7 +3122,7 @@
             </div>
             <div ng-class="{'hide' : !toggle107, 'nothide' : model.Cote11G != '' && model.Cote11G}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Cote11G }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Cote11G }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Cote11G" placeholder="'{{ examination.Cote11G }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3132,7 +3130,7 @@
             </div>
             <div ng-class="{'hide' : !toggle108, 'nothide' : model.Cote12D != '' && model.Cote12D}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Cote12D }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Cote12D }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Cote12D" placeholder="'{{ examination.Cote12D }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3140,7 +3138,7 @@
             </div>
             <div ng-class="{'hide' : !toggle109, 'nothide' : model.Cote12G != '' && model.Cote12G}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Cote12G }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Cote12G }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Cote12G" placeholder="'{{ examination.Cote12G }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3148,7 +3146,7 @@
             </div>
             <div ng-class="{'hide' : !toggle110, 'nothide' : model.EpauleG != '' && model.EpauleG}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.EpauleG }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.EpauleG }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.EpauleG" placeholder="'{{ examination.EpauleG }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3156,7 +3154,7 @@
             </div>
             <div ng-class="{'hide' : !toggle111, 'nothide' : model.ClaviculeG != '' && model.ClaviculeG}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.ClaviculeG }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.ClaviculeG }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.ClaviculeG" placeholder="'{{ examination.ClaviculeG }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3164,7 +3162,7 @@
             </div>
             <div ng-class="{'hide' : !toggle112, 'nothide' : model.OmoplateG != '' && model.OmoplateG}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.OmoplateG }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.OmoplateG }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.OmoplateG" placeholder="'{{ examination.OmoplateG }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3172,7 +3170,7 @@
             </div>
             <div ng-class="{'hide' : !toggle113, 'nothide' : model.HumerusG != '' && model.HumerusG}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.HumerusG }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.HumerusG }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.HumerusG" placeholder="'{{ examination.HumerusG }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3180,7 +3178,7 @@
             </div>
             <div ng-class="{'hide' : !toggle114, 'nothide' : model.BrasG != '' && model.BrasG}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.BrasG }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.BrasG }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.BrasG" placeholder="'{{ examination.BrasG }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3188,7 +3186,7 @@
             </div>
             <div ng-class="{'hide' : !toggle115, 'nothide' : model.CoudeG != '' && model.CoudeG}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.CoudeG }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.CoudeG }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.CoudeG" placeholder="'{{ examination.CoudeG }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3196,7 +3194,7 @@
             </div>
             <div ng-class="{'hide' : !toggle116, 'nothide' : model.CubitusG != '' && model.CubitusG}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.CubitusG }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.CubitusG }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.CubitusG" placeholder="'{{ examination.CubitusG }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3204,7 +3202,7 @@
             </div>
             <div ng-class="{'hide' : !toggle117, 'nothide' : model.RadiusG != '' && model.RadiusG}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.RadiusG }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.RadiusG }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.RadiusG" placeholder="'{{ examination.RadiusG }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3212,7 +3210,7 @@
             </div>
             <div ng-class="{'hide' : !toggle118, 'nothide' : model.PoignetG != '' && model.RadiusG}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.PoignetG }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.PoignetG }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.PoignetG" placeholder="'{{ examination.PoignetG }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3220,7 +3218,7 @@
             </div>
             <div ng-class="{'hide' : !toggle119, 'nothide' : model.SemiLunaireG != '' && model.SemiLunaireG}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.SemiLunaireG }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.SemiLunaireG }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.SemiLunaireG" placeholder="'{{ examination.SemiLunaireG }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3228,7 +3226,7 @@
             </div>
             <div ng-class="{'hide' : !toggle120, 'nothide' : model.ScaphoideG != '' && model.ScaphoideG}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.ScaphoideG }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.ScaphoideG }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.ScaphoideG" placeholder="'{{ examination.ScaphoideG }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3236,7 +3234,7 @@
             </div>
             <div ng-class="{'hide' : !toggle121, 'nothide' : model.PyramidalG != '' && model.PyramidalG}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.PyramidalG }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.PyramidalG }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.PyramidalG" placeholder="'{{ examination.PyramidalG }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3244,7 +3242,7 @@
             </div>
             <div ng-class="{'hide' : !toggle122, 'nothide' : model.GrandOsG != '' && model.GrandOsG}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.GrandOsG }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.GrandOsG }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.GrandOsG" placeholder="'{{ examination.GrandOsG }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3252,7 +3250,7 @@
             </div>
             <div ng-class="{'hide' : !toggle123, 'nothide' : model.TrapezeG != '' && model.TrapezeG}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.TrapezeG }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.TrapezeG }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.TrapezeG" placeholder="'{{ examination.TrapezeG }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3260,7 +3258,7 @@
             </div>
             <div ng-class="{'hide' : !toggle124, 'nothide' : model.OsCrochuG != '' && model.OsCrochuG}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.OsCrochuG }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.OsCrochuG }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.OsCrochuG" placeholder="'{{ examination.OsCrochuG }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3268,7 +3266,7 @@
             </div>
             <div ng-class="{'hide' : !toggle125, 'nothide' : model.Metacarpe1G != '' && model.Metacarpe1G}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Metacarpe1G }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Metacarpe1G }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Metacarpe1G" placeholder="'{{ examination.Metacarpe1G }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3276,7 +3274,7 @@
             </div>
             <div ng-class="{'hide' : !toggle126, 'nothide' : model.TrapezoideG != '' && model.TrapezoideG}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.TrapezoideG }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.TrapezoideG }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.TrapezoideG" placeholder="'{{ examination.TrapezoideG }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3284,7 +3282,7 @@
             </div>
             <div ng-class="{'hide' : !toggle127, 'nothide' : model.PisiformeG != '' && model.PisiformeG}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.PisiformeG }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.PisiformeG }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.PisiformeG" placeholder="'{{ examination.PisiformeG }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3292,7 +3290,7 @@
             </div>
             <div ng-class="{'hide' : !toggle128, 'nothide' : model.Metacarpe5G != '' && model.Metacarpe5G}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Metacarpe5G }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Metacarpe5G }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Metacarpe5G" placeholder="'{{ examination.Metacarpe5G }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3300,7 +3298,7 @@
             </div>
             <div ng-class="{'hide' : !toggle129, 'nothide' : model.Metacarpe4G != '' && model.Metacarpe4G}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Metacarpe4G }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Metacarpe4G }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Metacarpe4G" placeholder="'{{ examination.Metacarpe4G }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3308,7 +3306,7 @@
             </div>
             <div ng-class="{'hide' : !toggle130, 'nothide' : model.Metacarpe2G != '' && model.Metacarpe2G}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Metacarpe2G }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Metacarpe2G }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Metacarpe2G" placeholder="'{{ examination.Metacarpe2G }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3316,7 +3314,7 @@
             </div>
             <div ng-class="{'hide' : !toggle131, 'nothide' : model.Metacarpe3G != '' && model.Metacarpe3G}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Metacarpe3G }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Metacarpe3G }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Metacarpe3G" placeholder="'{{ examination.Metacarpe3G }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3324,7 +3322,7 @@
             </div>
             <div ng-class="{'hide' : !toggle132, 'nothide' : model.P3PouceG != '' && model.P3PouceG}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.P3PouceG }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.P3PouceG }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.P3PouceG" placeholder="'{{ examination.P3PouceG }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3332,7 +3330,7 @@
             </div>
             <div ng-class="{'hide' : !toggle133, 'nothide' : model.P1Seg5G != '' && model.P1Seg5G}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.P1Seg5G }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.P1Seg5G }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.P1Seg5G" placeholder="'{{ examination.P1Seg5G }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3340,7 +3338,7 @@
             </div>
             <div ng-class="{'hide' : !toggle134, 'nothide' : model.P1Seg4G != '' && model.P1Seg4G}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.P1Seg4G }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.P1Seg4G }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.P1Seg4G" placeholder="'{{ examination.P1Seg4G }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3348,7 +3346,7 @@
             </div>
             <div ng-class="{'hide' : !toggle135, 'nothide' : model.P1Seg3G != '' && model.P1Seg3G}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.P1Seg3G }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.P1Seg3G }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.P1Seg3G" placeholder="'{{ examination.P1Seg3G }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3356,7 +3354,7 @@
             </div>
             <div ng-class="{'hide' : !toggle136, 'nothide' : model.P1Seg2G != '' && model.P1Seg2G}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.P1Seg2G }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.P1Seg2G }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.P1Seg2G" placeholder="'{{ examination.P1Seg2G }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3364,7 +3362,7 @@
             </div>
             <div ng-class="{'hide' : !toggle137, 'nothide' : model.P1PouceG != '' && model.P1PouceG}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.P1PouceG }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.P1PouceG }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.P1PouceG" placeholder="'{{ examination.P1PouceG }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3372,7 +3370,7 @@
             </div>
             <div ng-class="{'hide' : !toggle138, 'nothide' : model.P2Seg5G != '' && model.P2Seg5G}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.P2Seg5G }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.P2Seg5G }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.P2Seg5G" placeholder="'{{ examination.P2Seg5G }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3380,7 +3378,7 @@
             </div>
             <div ng-class="{'hide' : !toggle139, 'nothide' : model.P2Seg4G != '' && model.P2Seg4G}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.P2Seg4G }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.P2Seg4G }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.P2Seg4G" placeholder="'{{ examination.P2Seg4G }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3388,7 +3386,7 @@
             </div>
             <div ng-class="{'hide' : !toggle140, 'nothide' : model.P3Seg5G != '' && model.P3Seg5G}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.P3Seg5G }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.P3Seg5G }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.P3Seg5G" placeholder="'{{ examination.P3Seg5G }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3396,7 +3394,7 @@
             </div>
             <div ng-class="{'hide' : !toggle141, 'nothide' : model.P2Seg3G != '' && model.P2Seg3G}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.P2Seg3G }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.P2Seg3G }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.P2Seg3G" placeholder="'{{ examination.P2Seg3G }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3404,7 +3402,7 @@
             </div>
             <div ng-class="{'hide' : !toggle142, 'nothide' : model.P2Seg2G != '' && model.P2Seg2G}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.P2Seg2G }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.P2Seg2G }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.P2Seg2G" placeholder="'{{ examination.P2Seg2G }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3412,7 +3410,7 @@
             </div>
             <div ng-class="{'hide' : !toggle143, 'nothide' : model.P3Seg4G != '' && model.P3Seg4G}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.P3Seg4G }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.P3Seg4G }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.P3Seg4G" placeholder="'{{ examination.P3Seg4G }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3420,7 +3418,7 @@
             </div>
             <div ng-class="{'hide' : !toggle144, 'nothide' : model.MainG != '' && model.MainG}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.MainG }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.MainG }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.MainG" placeholder="'{{ examination.MainG }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3428,7 +3426,7 @@
             </div>
             <div ng-class="{'hide' : !toggle145, 'nothide' : model.P3Seg2G != '' && model.P3Seg2G}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.P3Seg2G }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.P3Seg2G }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.P3Seg2G" placeholder="'{{ examination.P3Seg2G }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3436,7 +3434,7 @@
             </div>
             <div ng-class="{'hide' : !toggle146, 'nothide' : model.P3Seg3G != '' && model.P3Seg3G}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.P3Seg3G }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.P3Seg3G }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.P3Seg3G" placeholder="'{{ examination.P3Seg3G }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3444,7 +3442,7 @@
             </div>
             <div ng-class="{'hide' : !toggle147, 'nothide' : model.C1 != '' && model.C1}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.C1 }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.C1 }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.C1" placeholder="'{{ examination.C1 }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3452,7 +3450,7 @@
             </div>
             <div ng-class="{'hide' : !toggle148, 'nothide' : model.C2 != '' && model.C2}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.C2 }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.C2 }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.C2" placeholder="'{{ examination.C2 }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3460,7 +3458,7 @@
             </div>
             <div ng-class="{'hide' : !toggle149, 'nothide' : model.C3 != '' && model.C3}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.C3 }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.C3 }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.C3" placeholder="'{{ examination.C3 }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3468,7 +3466,7 @@
             </div>
             <div ng-class="{'hide' : !toggle150, 'nothide' : model.Cervicales != '' && model.Cervicales}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Cervicales }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Cervicales }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Cervicales" placeholder="'{{ examination.Cervicales }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3476,7 +3474,7 @@
             </div>
             <div ng-class="{'hide' : !toggle151, 'nothide' : model.C4 != '' && model.C4}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.C4 }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.C4 }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.C4" placeholder="'{{ examination.C4 }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3484,7 +3482,7 @@
             </div>
             <div ng-class="{'hide' : !toggle152, 'nothide' : model.C5 != '' && model.C5}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.C5 }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.C5 }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.C5" placeholder="'{{ examination.C5 }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3492,7 +3490,7 @@
             </div>
             <div ng-class="{'hide' : !toggle153, 'nothide' : model.C6 != '' && model.C6}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.C6 }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.C6 }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.C6" placeholder="'{{ examination.C6 }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3500,7 +3498,7 @@
             </div>
             <div ng-class="{'hide' : !toggle154, 'nothide' : model.C7 != '' && model.C7}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.C7 }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.C7 }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.C7" placeholder="'{{ examination.C7 }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3508,7 +3506,7 @@
             </div>
             <div ng-class="{'hide' : !toggle155, 'nothide' : model.Th1 != '' && model.Th1}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Th1 }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Th1 }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Th1" placeholder="'{{ examination.Th1 }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3516,7 +3514,7 @@
             </div>
             <div ng-class="{'hide' : !toggle156, 'nothide' : model.Th2 != '' && model.Th2}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Th2 }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Th2 }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Th2" placeholder="'{{ examination.Th2 }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3524,7 +3522,7 @@
             </div>
             <div ng-class="{'hide' : !toggle157, 'nothide' : model.Th3 != '' && model.Th3}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Th3 }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Th3 }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Th3" placeholder="'{{ examination.Th3 }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3532,7 +3530,7 @@
             </div>
             <div ng-class="{'hide' : !toggle158, 'nothide' : model.Th4 != '' && model.Th4}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Th4 }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Th4 }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Th4" placeholder="'{{ examination.Th4 }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3540,7 +3538,7 @@
             </div>
             <div ng-class="{'hide' : !toggle159, 'nothide' : model.Th5 != '' && model.Th5}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Th5 }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Th5 }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Th5" placeholder="'{{ examination.Th5 }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3548,7 +3546,7 @@
             </div>
             <div ng-class="{'hide' : !toggle160, 'nothide' : model.Th6 != '' && model.Th6}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Th6 }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Th6 }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Th6" placeholder="'{{ examination.Th6 }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3556,7 +3554,7 @@
             </div>
             <div ng-class="{'hide' : !toggle161, 'nothide' : model.Th7 != '' && model.Th7}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Th7 }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Th7 }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Th7" placeholder="'{{ examination.Th7 }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3564,7 +3562,7 @@
             </div>
             <div ng-class="{'hide' : !toggle162, 'nothide' : model.Thoraciques != '' && model.Thoraciques}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Thoraciques }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Thoraciques }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Thoraciques" placeholder="'{{ examination.Thoraciques }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3572,7 +3570,7 @@
             </div>
             <div ng-class="{'hide' : !toggle163, 'nothide' : model.Th8 != '' && model.Th8}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Th8 }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Th8 }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Th8" placeholder="'{{ examination.Th8 }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3580,7 +3578,7 @@
             </div>
             <div ng-class="{'hide' : !toggle164, 'nothide' : model.Th9 != '' && model.Th9}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Th9 }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Th9 }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Th9" placeholder="'{{ examination.Th9 }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3588,7 +3586,7 @@
             </div>
             <div ng-class="{'hide' : !toggle165, 'nothide' : model.Th10 != '' && model.Th10}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Th10 }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Th10 }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Th10" placeholder="'{{ examination.Th10 }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3596,7 +3594,7 @@
             </div>
             <div ng-class="{'hide' : !toggle166, 'nothide' : model.Th11 != '' && model.Th11}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Th11 }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Th11 }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Th11" placeholder="'{{ examination.Th11 }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3604,7 +3602,7 @@
             </div>
             <div ng-class="{'hide' : !toggle167, 'nothide' : model.Th12 != '' && model.Th12}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Th12 }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Th12 }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Th12" placeholder="'{{ examination.Th12 }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3612,7 +3610,7 @@
             </div>
             <div ng-class="{'hide' : !toggle168, 'nothide' : model.L1 != '' && model.L1}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.L1 }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.L1 }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.L1" placeholder="'{{ examination.L1 }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3620,7 +3618,7 @@
             </div>
             <div ng-class="{'hide' : !toggle169, 'nothide' : model.L2 != '' && model.L2}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.L2 }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.L2 }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.L2" placeholder="'{{ examination.L2 }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3628,7 +3626,7 @@
             </div>
             <div ng-class="{'hide' : !toggle170, 'nothide' : model.L3 != '' && model.L3}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.L3 }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.L3 }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.L3" placeholder="'{{ examination.L3 }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3636,7 +3634,7 @@
             </div>
             <div ng-class="{'hide' : !toggle171, 'nothide' : model.Lombaires != '' && model.Lombaires}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Lombaires }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Lombaires }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Lombaires" placeholder="'{{ examination.Lombaires }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3644,7 +3642,7 @@
             </div>
             <div ng-class="{'hide' : !toggle172, 'nothide' : model.L4 != '' && model.L4}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.L4 }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.L4 }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.L4" placeholder="'{{ examination.L4 }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3652,7 +3650,7 @@
             </div>
             <div ng-class="{'hide' : !toggle173, 'nothide' : model.L5 != '' && model.L5}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.L5 }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.L5 }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.L5" placeholder="'{{ examination.L5 }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3660,7 +3658,7 @@
             </div>
             <div ng-class="{'hide' : !toggle174, 'nothide' : model.SacroIliaqueD != '' && model.SacroIliaqueD}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.SacroIliaqueD }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.SacroIliaqueD }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.SacroIliaqueD" placeholder="'{{ examination.SacroIliaqueD }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3668,7 +3666,7 @@
             </div>
             <div ng-class="{'hide' : !toggle175, 'nothide' : model.SacroIliaqueG != '' && model.SacroIliaqueG}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.SacroIliaqueG }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.SacroIliaqueG }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.SacroIliaqueG" placeholder="'{{ examination.SacroIliaqueG }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3676,7 +3674,7 @@
             </div>
             <div ng-class="{'hide' : !toggle176, 'nothide' : model.Sacrum != '' && model.Sacrum }">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Sacrum }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Sacrum }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Sacrum" placeholder="'{{ examination.Sacrum }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3684,7 +3682,7 @@
             </div>
             <div ng-class="{'hide' : !toggle177, 'nothide' : model.IlionD != '' && model.IlionD}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.IlionD }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.IlionD }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.IlionD" placeholder="'{{ examination.IlionD }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3692,7 +3690,7 @@
             </div>
             <div ng-class="{'hide' : !toggle178, 'nothide' : model.IlioinG != '' && model.IlioinG}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.IlioinG }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.IlioinG }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.IlioinG" placeholder="'{{ examination.IlioinG }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3700,7 +3698,7 @@
             </div>
             <div ng-class="{'hide' : !toggle179, 'nothide' : model.Bassin != '' && model.Bassin}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Bassin }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Bassin }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Bassin" placeholder="'{{ examination.Bassin }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3708,7 +3706,7 @@
             </div>
             <div ng-class="{'hide' : !toggle180, 'nothide' : model.IschionD != '' && model.IschionD}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.IschionD }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.IschionD }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.IschionD" placeholder="'{{ examination.IschionD }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3716,7 +3714,7 @@
             </div>
             <div ng-class="{'hide' : !toggle181, 'nothide' : model.IschionG != '' && model.IschionG}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.IschionG }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.IschionG }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.IschionG" placeholder="'{{ examination.IschionG }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3724,7 +3722,7 @@
             </div>
             <div ng-class="{'hide' : !toggle182, 'nothide' : model.Coccyx != '' && model.Coccyx}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Coccyx }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Coccyx }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Coccyx" placeholder="'{{ examination.Coccyx }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3732,7 +3730,7 @@
             </div>
             <div ng-class="{'hide' : !toggle183, 'nothide' : model.HancheD != '' && model.HancheD}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.HancheD }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.HancheD }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.HancheD" placeholder="'{{ examination.HancheD }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3740,7 +3738,7 @@
             </div>
             <div ng-class="{'hide' : !toggle184, 'nothide' : model.HancheG != '' && model.HancheG}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.HancheG }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.HancheG }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.HancheG" placeholder="'{{ examination.HancheG }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3748,7 +3746,7 @@
             </div>
             <div ng-class="{'hide' : !toggle185, 'nothide' : model.OsPubienG != '' && model.OsPubienG}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.OsPubienG }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.OsPubienG }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.OsPubienG" placeholder="'{{ examination.OsPubienG }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3756,7 +3754,7 @@
             </div>
             <div ng-class="{'hide' : !toggle186, 'nothide' : model.OsPubienD != '' && model.OsPubienD}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.OsPubienD }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.OsPubienD }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.OsPubienD" placeholder="'{{ examination.OsPubienD }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3764,7 +3762,7 @@
             </div>
             <div ng-class="{'hide' : !toggle187, 'nothide' : model.JambeD != '' && model.JambeD}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.JambeD }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.JambeD }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.JambeD" placeholder="'{{ examination.JambeD }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3772,7 +3770,7 @@
             </div>
             <div ng-class="{'hide' : !toggle188, 'nothide' : model.FemurD != '' && model.FemurD}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.FemurD }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.FemurD }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.FemurD" placeholder="'{{ examination.FemurD }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3780,7 +3778,7 @@
             </div>
             <div ng-class="{'hide' : !toggle189, 'nothide' : model.PatellaD != '' && model.PatellaD}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.PatellaD }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.PatellaD }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.PatellaD" placeholder="'{{ examination.PatellaD }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3788,7 +3786,7 @@
             </div>
             <div ng-class="{'hide' : !toggle190, 'nothide' : model.GenouD != '' && model.GenouD}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.GenouD }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.GenouD }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.GenouD" placeholder="'{{ examination.GenouD }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3796,7 +3794,7 @@
             </div>
             <div ng-class="{'hide' : !toggle191, 'nothide' : model.FibulaD != '' && model.FibulaD}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.FibulaD }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.FibulaD }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.FibulaD" placeholder="'{{ examination.FibulaD }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3804,7 +3802,7 @@
             </div>
             <div ng-class="{'hide' : !toggle192, 'nothide' : model.TibiaD != '' && model.TibiaD}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.TibiaD }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.TibiaD }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.TibiaD" placeholder="'{{ examination.TibiaD }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3820,7 +3818,7 @@
             </div>
             <div ng-class="{'hide' : !toggle194, 'nothide' : model.ChevilleD != '' && model.ChevilleD}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.ChevilleD }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.ChevilleD }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.ChevilleD" placeholder="'{{ examination.ChevilleD }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3828,7 +3826,7 @@
             </div>
             <div ng-class="{'hide' : !toggle195, 'nothide' : model.TalusD != '' && model.TalusD}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.TalusD }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.TalusD }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.TalusD" placeholder="'{{ examination.TalusD }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3836,7 +3834,7 @@
             </div>
             <div ng-class="{'hide' : !toggle196, 'nothide' : model.OsNaviculaireD != '' && model.OsNaviculaireD}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.OsNaviculaireD }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.OsNaviculaireD }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.OsNaviculaireD" placeholder="'{{ examination.OsNaviculaireD }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3844,7 +3842,7 @@
             </div>
             <div ng-class="{'hide' : !toggle197, 'nothide' : model.Cuneiforme1D != '' && model.Cuneiforme1D}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Cuneiforme1D }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Cuneiforme1D }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Cuneiforme1D" placeholder="'{{ examination.Cuneiforme1D }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3852,7 +3850,7 @@
             </div>
             <div ng-class="{'hide' : !toggle198, 'nothide' : model.Metatarsien1D != '' && model.Metatarsien1D}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Metatarsien1D }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Metatarsien1D }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Metatarsien1D" placeholder="'{{ examination.Metatarsien1D }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3860,7 +3858,7 @@
             </div>
             <div ng-class="{'hide' : !toggle199, 'nothide' : model.Cuneiforme2D != '' && model.Cuneiforme2D}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Cuneiforme2D }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Cuneiforme2D }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Cuneiforme2D" placeholder="'{{ examination.Cuneiforme2D }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3868,7 +3866,7 @@
             </div>
             <div ng-class="{'hide' : !toggle200, 'nothide' : model.Cuneiforme3D != '' && model.Cuneiforme3D}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Cuneiforme3D }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Cuneiforme3D }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Cuneiforme3D" placeholder="'{{ examination.Cuneiforme3D }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3876,7 +3874,7 @@
             </div>
             <div ng-class="{'hide' : !toggle201, 'nothide' : model.Metatarsien2D != '' && model.Metatarsien2D}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Metatarsien2D }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Metatarsien2D }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Metatarsien2D" placeholder="'{{ examination.Metatarsien2D }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3884,7 +3882,7 @@
             </div>
             <div ng-class="{'hide' : !toggle202, 'nothide' : model.CalcuneusD != '' && model.CalcuneusD}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.CalcuneusD }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.CalcuneusD }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.CalcuneusD" placeholder="'{{ examination.CalcuneusD }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3892,7 +3890,7 @@
             </div>
             <div ng-class="{'hide' : !toggle203, 'nothide' : model.OsCuboideD != '' && model.OsCuboideD}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.OsCuboideD }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.OsCuboideD }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.OsCuboideD" placeholder="'{{ examination.OsCuboideD }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3900,7 +3898,7 @@
             </div>
             <div ng-class="{'hide' : !toggle204, 'nothide' : model.Phalange1D != '' && model.Phalange1D}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Phalange1D }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Phalange1D }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Phalange1D" placeholder="'{{ examination.Phalange1D }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3908,7 +3906,7 @@
             </div>
             <div ng-class="{'hide' : !toggle205, 'nothide' : model.Phalangette1D != '' && model.Phalangette1D}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Phalangette1D }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Phalangette1D }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Phalangette1D" placeholder="'{{ examination.Phalangette1D }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3916,7 +3914,7 @@
             </div>
             <div ng-class="{'hide' : !toggle206, 'nothide' : model.Metatarsien3D != '' && model.Metatarsien3D}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Metatarsien3D }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Metatarsien3D }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Metatarsien3D" placeholder="'{{ examination.Metatarsien3D }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3924,7 +3922,7 @@
             </div>
             <div ng-class="{'hide' : !toggle207, 'nothide' : model.Phalange2D != '' && model.Phalange2D}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Phalange2D }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Phalange2D }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Phalange2D" placeholder="'{{ examination.Phalange2D }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3932,7 +3930,7 @@
             </div>
             <div ng-class="{'hide' : !toggle208, 'nothide' : model.PiedD != '' && model.PiedD}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.PiedD }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.PiedD }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.PiedD" placeholder="'{{ examination.PiedD }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3940,7 +3938,7 @@
             </div>
             <div ng-class="{'hide' : !toggle209, 'nothide' : model.Phalangine2D != '' && model.Phalangine2D}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Phalangine2D }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Phalangine2D }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Phalangine2D" placeholder="'{{ examination.Phalangine2D }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3948,7 +3946,7 @@
             </div>
             <div ng-class="{'hide' : !toggle210, 'nothide' : model.Metatarsien4D != '' && model.Metatarsien4D}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Metatarsien4D }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Metatarsien4D }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Metatarsien4D" placeholder="'{{ examination.Metatarsien4D }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3956,7 +3954,7 @@
             </div>
             <div ng-class="{'hide' : !toggle211, 'nothide' : model.Phalangette2D != '' && model.Phalangette2D}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Phalangette2D }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Phalangette2D }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Phalangette2D" placeholder="'{{ examination.Phalangette2D }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3964,7 +3962,7 @@
             </div>
             <div ng-class="{'hide' : !toggle212, 'nothide' : model.Phalange3D != '' && model.Phalange3D}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Phalange3D }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Phalange3D }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Phalange3D" placeholder="'{{ examination.Phalange3D }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3972,7 +3970,7 @@
             </div>
             <div ng-class="{'hide' : !toggle213, 'nothide' : model.Metatarsien5D != '' && model.Metatarsien5D}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Metatarsien5D }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Metatarsien5D }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Metatarsien5D" placeholder="'{{ examination.Metatarsien5D }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3980,7 +3978,7 @@
             </div>
             <div ng-class="{'hide' : !toggle214, 'nothide' : model.Phalangine3D != '' && model.Phalangine3D}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Phalangine3D }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Phalangine3D }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Phalangine3D" placeholder="'{{ examination.Phalangine3D }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3988,7 +3986,7 @@
             </div>
             <div ng-class="{'hide' : !toggle215, 'nothide' : model.Phalangette3D != '' && model.Phalangette3D}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Phalangette3D }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Phalangette3D }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Phalangette3D" placeholder="'{{ examination.Phalangette3D }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -3996,7 +3994,7 @@
             </div>
             <div ng-class="{'hide' : !toggle216, 'nothide' : model.Phalange4D != '' && model.Phalange4D}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Phalange4D }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Phalange4D }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Phalange4D" placeholder="'{{ examination.Phalange4D }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -4004,7 +4002,7 @@
             </div>
             <div ng-class="{'hide' : !toggle217, 'nothide' : model.Phalangine4D != '' && model.Phalangine4D}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Phalangine4D }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Phalangine4D }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Phalangine4D" placeholder="'{{ examination.Phalangine4D }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -4012,7 +4010,7 @@
             </div>
             <div ng-class="{'hide' : !toggle218, 'nothide' : model.Phalangette4D != '' && model.Phalangette4D}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Phalangette4D }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Phalangette4D }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Phalangette4D" placeholder="'{{ examination.Phalangette4D }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -4020,7 +4018,7 @@
             </div>
             <div ng-class="{'hide' : !toggle219, 'nothide' : model.Phalange5D != '' && model.Phalange5D}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Phalange5D }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Phalange5D }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Phalange5D" placeholder="'{{ examination.Phalange5D }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -4028,7 +4026,7 @@
             </div>
             <div ng-class="{'hide' : !toggle220, 'nothide' : model.Phalangine5D != '' && model.Phalangine5D}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Phalangine5D }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Phalangine5D }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Phalangine5D" placeholder="'{{ examination.Phalangine5D }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -4036,7 +4034,7 @@
             </div>
             <div ng-class="{'hide' : !toggle221, 'nothide' : model.Phalangette5D != '' && model.Phalangette5D}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Phalangette5D }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Phalangette5D }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Phalangette5D" placeholder="'{{ examination.Phalangette5D }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -4044,7 +4042,7 @@
             </div>
             <div ng-class="{'hide' : !toggle222, 'nothide' : model.JambeG != '' && model.JambeG}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.JambeG }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.JambeG }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.JambeG" placeholder="'{{ examination.JambeG }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -4052,7 +4050,7 @@
             </div>
             <div ng-class="{'hide' : !toggle223, 'nothide' : model.FemurG != '' && model.FemurG}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.FemurG }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.FemurG }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.FemurG" placeholder="'{{ examination.FemurG }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -4060,7 +4058,7 @@
             </div>
             <div ng-class="{'hide' : !toggle224, 'nothide' : model.PatellaG != '' && model.PatellaG}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.PatellaG }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.PatellaG }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.PatellaG" placeholder="'{{ examination.PatellaG }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -4068,7 +4066,7 @@
             </div>
             <div ng-class="{'hide' : !toggle225, 'nothide' : model.GenouG != '' && model.GenouG}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.GenouG }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.GenouG }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.GenouG" placeholder="'{{ examination.GenouG }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -4076,7 +4074,7 @@
             </div>
             <div ng-class="{'hide' : !toggle226, 'nothide' : model.FibulaG != '' && model.FibulaG}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.FibulaG }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.FibulaG }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.FibulaG" placeholder="'{{ examination.FibulaG }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -4084,7 +4082,7 @@
             </div>
             <div ng-class="{'hide' : !toggle227, 'nothide' : model.TibiaG != '' && model.TibiaG}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.TibiaG }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.TibiaG }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.TibiaG" placeholder="'{{ examination.TibiaG }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -4100,7 +4098,7 @@
             </div>
             <div ng-class="{'hide' : !toggle229, 'nothide' : model.ChevilleG != '' && model.ChevilleG}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.ChevilleG }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.ChevilleG }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.ChevilleG" placeholder="'{{ examination.ChevilleG }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -4108,7 +4106,7 @@
             </div>
             <div ng-class="{'hide' : !toggle230, 'nothide' : model.TalusG != '' && model.TalusG}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.TalusG }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.TalusG }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.TalusG" placeholder="'{{ examination.TalusG }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -4116,7 +4114,7 @@
             </div>
             <div ng-class="{'hide' : !toggle231, 'nothide' : model.OsNaviculaireG != '' && model.OsNaviculaireG}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.OsNaviculaireG }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.OsNaviculaireG }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.OsNaviculaireG" placeholder="'{{ examination.OsNaviculaireG }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -4124,7 +4122,7 @@
             </div>
             <div ng-class="{'hide' : !toggle232, 'nothide' : model.Cuneiforme1G != '' && model.Cuneiforme1G}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Cuneiforme1G }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Cuneiforme1G }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Cuneiforme1G" placeholder="'{{ examination.Cuneiforme1G }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -4132,7 +4130,7 @@
             </div>
             <div ng-class="{'hide' : !toggle233, 'nothide' : model.Metatarsien1G != '' && model.Metatarsien1G}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Metatarsien1G }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Metatarsien1G }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Metatarsien1G" placeholder="'{{ examination.Metatarsien1G }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -4140,7 +4138,7 @@
             </div>
             <div ng-class="{'hide' : !toggle234, 'nothide' : model.Cuneiforme2G != '' && model.Cuneiforme2G}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Cuneiforme2G }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Cuneiforme2G }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Cuneiforme2G" placeholder="'{{ examination.Cuneiforme2G }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -4148,7 +4146,7 @@
             </div>
             <div ng-class="{'hide' : !toggle235, 'nothide' : model.Cuneiforme3G != '' && model.Cuneiforme3G}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Cuneiforme3G }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Cuneiforme3G }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Cuneiforme3G" placeholder="'{{ examination.Cuneiforme3G }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -4156,7 +4154,7 @@
             </div>
             <div ng-class="{'hide' : !toggle236, 'nothide' : model.CalcuneusG != '' && model.CalcuneusG}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.CalcuneusG }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.CalcuneusG }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.CalcuneusG" placeholder="'{{ examination.CalcuneusG }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -4164,7 +4162,7 @@
             </div>
             <div ng-class="{'hide' : !toggle237, 'nothide' : model.Metatarsien2G != '' && model.Metatarsien2G}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Metatarsien2G }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Metatarsien2G }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Metatarsien2G" placeholder="'{{ examination.Metatarsien2G }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -4172,7 +4170,7 @@
             </div>
             <div ng-class="{'hide' : !toggle238, 'nothide' : model.OsCuboideG != '' && model.OsCuboideG}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.OsCuboideG }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.OsCuboideG }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.OsCuboideG" placeholder="'{{ examination.OsCuboideG }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -4180,7 +4178,7 @@
             </div>
             <div ng-class="{'hide' : !toggle239, 'nothide' : model.Phalange1G != '' && model.Phalange1G}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Phalange1G }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Phalange1G }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Phalange1G" placeholder="'{{ examination.Phalange1G }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -4188,7 +4186,7 @@
             </div>
             <div ng-class="{'hide' : !toggle240, 'nothide' : model.Phalangette1G != '' && model.Phalangette1G}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Phalangette1G }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Phalangette1G }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Phalangette1G" placeholder="'{{ examination.Phalangette1G }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -4196,7 +4194,7 @@
             </div>
             <div ng-class="{'hide' : !toggle241, 'nothide' : model.Metatarsien3G != '' && model.Metatarsien3G}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Metatarsien3G }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Metatarsien3G }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Metatarsien3G" placeholder="'{{ examination.Metatarsien3G }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -4204,7 +4202,7 @@
             </div>
             <div ng-class="{'hide' : !toggle242, 'nothide' : model.Phalange2G != '' && model.Phalange2G}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Phalange2G }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Phalange2G }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Phalange2G" placeholder="'{{ examination.Phalange2G }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -4212,7 +4210,7 @@
             </div>
             <div ng-class="{'hide' : !toggle243, 'nothide' : model.PiedG != '' && model.PiedG}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.PiedG }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.PiedG }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.PiedG" placeholder="'{{ examination.PiedG }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -4220,7 +4218,7 @@
             </div>
             <div ng-class="{'hide' : !toggle244, 'nothide' : model.Phalangine2G != '' && model.Phalangine2G}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Phalangine2G }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Phalangine2G }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Phalangine2G" placeholder="'{{ examination.Phalangine2G }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -4228,7 +4226,7 @@
             </div>
             <div ng-class="{'hide' : !toggle245, 'nothide' : model.Metatarsien4G != '' && model.Metatarsien4G}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Metatarsien4G }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Metatarsien4G }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Metatarsien4G" placeholder="'{{ examination.Metatarsien4G }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -4236,7 +4234,7 @@
             </div>
             <div ng-class="{'hide' : !toggle246, 'nothide' : model.Phalangette2G != '' && model.Phalangette2G}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Phalangette2G }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Phalangette2G }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Phalangette2G" placeholder="'{{ examination.Phalangette2G }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -4244,7 +4242,7 @@
             </div>
             <div ng-class="{'hide' : !toggle247, 'nothide' : model.Phalange3G != '' && model.Phalange3G}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Phalange3G }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Phalange3G }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Phalange3G" placeholder="'{{ examination.Phalange3G }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -4252,7 +4250,7 @@
             </div>
             <div ng-class="{'hide' : !toggle248, 'nothide' : model.Metatarsien5G != '' && model.Metatarsien5G}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Metatarsien5G }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Metatarsien5G }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Metatarsien5G" placeholder="'{{ examination.Metatarsien5G }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -4260,7 +4258,7 @@
             </div>
             <div ng-class="{'hide' : !toggle249, 'nothide' : model.Phalangine3G != '' && model.Phalangine3G}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Phalangine3G }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Phalangine3G }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Phalangine3G" placeholder="'{{ examination.Phalangine3G }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -4268,7 +4266,7 @@
             </div>
             <div ng-class="{'hide' : !toggle250, 'nothide' : model.Phalangette3G != '' && model.Phalangette3G}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Phalangette3G }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Phalangette3G }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Phalangette3G" placeholder="'{{ examination.Phalangette3G }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -4276,7 +4274,7 @@
             </div>
             <div ng-class="{'hide' : !toggle251, 'nothide' : model.Phalange4G != '' && model.Phalange4G}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Phalange4G }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Phalange4G }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Phalange4G" placeholder="'{{ examination.Phalange4G }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -4284,7 +4282,7 @@
             </div>
             <div ng-class="{'hide' : !toggle252, 'nothide' : model.Phalangine4G != '' && model.Phalangine4G}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Phalangine4G }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Phalangine4G }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Phalangine4G" placeholder="'{{ examination.Phalangine4G }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -4292,7 +4290,7 @@
             </div>
             <div ng-class="{'hide' : !toggle253, 'nothide' : model.Phalangette4G != '' && model.Phalangette4G}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Phalangette4G }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Phalangette4G }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Phalangette4G" placeholder="'{{ examination.Phalangette4G }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -4300,7 +4298,7 @@
             </div>
             <div ng-class="{'hide' : !toggle254, 'nothide' : model.Phalange5G != '' && model.Phalange5G}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Phalange5G }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Phalange5G }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Phalange5G" placeholder="'{{ examination.Phalange5G }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -4308,7 +4306,7 @@
             </div>
             <div ng-class="{'hide' : !toggle255, 'nothide' : model.Phalangine5G != '' && model.Phalangine5G}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Phalangine5G }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Phalangine5G }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Phalangine5G" placeholder="'{{ examination.Phalangine5G }}'" is-editable="editableForm.$visible"></div>
                 </div>
@@ -4316,7 +4314,7 @@
             </div>
             <div ng-class="{'hide' : !toggle256, 'nothide' : model.Phalangette5G != '' && model.Phalangette5G}">
               <div class="row">
-                <div class="col-md-12 subtitle colorText">{{ examination.Phalangette5G }} :</div>
+                <div class="col-md-12 subtitle">{{ examination.Phalangette5G }} :</div>
                 <div class="col-md-12">
                   <div hallo-editor ng-model="model.Phalangette5G" placeholder="'{{ examination.Phalangette5G }}'" is-editable="editableForm.$visible"></div>
                 </div>
