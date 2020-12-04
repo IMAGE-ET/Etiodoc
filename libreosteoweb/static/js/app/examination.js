@@ -158,10 +158,12 @@ examination.directive('examination', ['ExaminationServ', function(ExaminationSer
 
       $scope.switchTissu = function() {
         document.getElementById('mainDiv').hidden = true;
+        document.getElementById('divTissu').hidden = false;
       };
 
       $scope.switchSkeleton = function() {
         document.getElementById('mainDiv').hidden = false;
+        document.getElementById('divTissu').hidden = true;
       };
 
 
