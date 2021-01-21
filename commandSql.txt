@@ -324,6 +324,6 @@ ALTER TABLE libreosteoweb_examination ADD Appendice text default '';
 
 
 
-ALTER TABLE libreosteoweb_examination ADD prescipteur text;
-ALTER TABLE libreosteoweb_examination ADD manipulateur text;
+ALTER TABLE libreosteoweb_examination ADD prescipteur text default '';
+ALTER TABLE libreosteoweb_examination ADD manipulateur text default '';
 ALTER TABLE libreosteoweb_therapeutsettings ADD schoolEnable bool default 0;
