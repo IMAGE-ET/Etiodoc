@@ -114,7 +114,7 @@ examination.directive('examination', ['ExaminationServ', function(ExaminationSer
       }
 
     },
-    controller: ['$scope', '$filter', '$window', 'growl', '$q', '$timeout', 'InvoiceService', '$uibModal', '$parse', function($scope, $filter, $window, growl, $q, $timeout, InvoiceService, $uibModal, $parse) {
+    controller: ['$scope', '$filter', '$window', 'growl', '$q', '$timeout', 'InvoiceService', '$uibModal', '$parse', 'TherapeutSettingsServ', function($scope, $filter, $window, growl, $q, $timeout, InvoiceService, $uibModal, $parse, TherapeutSettingsServ) {
       $scope.types = [{
           value: 1,
           text: gettext('Normal examination')
@@ -142,26 +142,62 @@ examination.directive('examination', ['ExaminationServ', function(ExaminationSer
           return gettext('not documented');
         }
       };
+      console.log($scope.model);
+      $scope.therapeutSettings = TherapeutSettingsServ.get_by_user();
 
       $scope.toggleSwitch = function(theString, length) {
-        //console.log(modal);
         var modal = $parse(theString);
-        //console.log(modal);
         if (length > 0) {
           modal.assign($scope, "");
         }
         else {
           modal.assign($scope, "&#30;");
         }
-        //console.log(length);
       };
 
       $scope.switchTissu = function() {
+
+        var cells = document.getElementsByTagName("div");
+
+        for (var i = cells.length-1; i >= 0 ; i--) {
+            var id = cells[i].id;
+            if ( id == "mainDiv" ) {
+              cells[i].hidden = true;
+              break;
+            }
+        }
+
+        for (var i = cells.length-1; i >= 0 ; i--) {
+            var id2 = cells[i].id;
+            if ( id2 == "divTissu" ) {
+              cells[i].hidden = false;
+                break;
+            }
+        }
         document.getElementById('mainDiv').hidden = true;
         document.getElementById('divTissu').hidden = false;
       };
 
       $scope.switchSkeleton = function() {
+        var cells = document.getElementsByTagName("div");
+
+        for (var i = cells.length-1; i >= 0 ; i--) {
+            var id = cells[i].id;
+            if ( id == "mainDiv" ) {
+              cells[i].hidden = false;
+              break;
+            }
+        }
+
+        for (var i = cells.length-1; i >= 0 ; i--) {
+            var id2 = cells[i].id;
+            if ( id2 == "divTissu" ) {
+              cells[i].hidden = true;
+                break;
+            }
+        }
+        console.log($scope.model);
+
         document.getElementById('mainDiv').hidden = false;
         document.getElementById('divTissu').hidden = true;
       };

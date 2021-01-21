@@ -164,6 +164,8 @@ class Examination(models.Model):
     Crane = models.TextField(_('Crane'), blank=True)
     AtmD = models.TextField(_('ATM Droite'), blank=True)
     AtmG = models.TextField(_('ATM Gauche'), blank=True)
+    prescipteur = models.TextField(_('Prescripteur'), blank=True)
+    manipulateur = models.TextField(_('Manipulateur'), blank=True)
 
 
     #Bras Droit
@@ -390,6 +392,53 @@ class Examination(models.Model):
     Phalangette5G = models.TextField(_('Phalangette du 5ème orteil gauche'), blank=True)
     PiedG = models.TextField(_('Pied Gauche'), blank=True)
     #End of skeleton
+
+
+
+
+    #Foie
+    Foie = models.TextField(_('Foie'), blank=True)
+    Rate = models.TextField(_('Rate'), blank=True)
+    VesiculeBiliaire = models.TextField(_('Vésicule biliare'), blank=True)
+    Pancreas = models.TextField(_('Pancréas'), blank=True)
+
+    #Digestif
+    Oesophage = models.TextField(_('Oesophage'), blank=True)
+    Estomac = models.TextField(_('Estomac'), blank=True)
+    Duodenum = models.TextField(_('Duodenum'), blank=True)
+    ColonTransverse = models.TextField(_('Côlon transverse'), blank=True)
+    ColonAscendant = models.TextField(_('Côlon ascendant'), blank=True)
+    ColonDescendant = models.TextField(_('Côlon descendant'), blank=True)
+    Rectum = models.TextField(_('Rectum'), blank=True)
+    Jujenum = models.TextField(_('Jujénum'), blank=True)
+    Ileon = models.TextField(_('Iléon'), blank=True)
+    ColonSimoide = models.TextField(_('ColonSimoide'), blank=True)
+    InstestinGrele = models.TextField(_('Intestin grêle'), blank=True)
+    Colon = models.TextField(_('Côlon'), blank=True)
+    Appendice = models.TextField(_('Appendice'), blank=True)
+
+    #Rain
+    RainDroit = models.TextField(_('Rain droit'), blank=True)
+    RainGauche = models.TextField(_('Rain gauche'), blank=True)
+    Vessie = models.TextField(_('Vessie'), blank=True)
+    TractusUrinaire = models.TextField(_('Tractus Urinaire'), blank=True)
+
+    #Homme
+    VessieM = models.TextField(_('Vessie'), blank=True)
+    Protaste = models.TextField(_('Protaste'), blank=True)
+    Penis = models.TextField(_('Pénis'), blank=True)
+    TesticuleDroite  = models.TextField(_('Testicule droite '), blank=True)
+    TesticuleGauche = models.TextField(_('Testicule gauche'), blank=True)
+    GenitalM = models.TextField(_('Organe génital'), blank=True)
+
+    #Femme
+    Vagin = models.TextField(_('Vagin'), blank=True)
+    ColUterus = models.TextField(_('Col de l’utérus'), blank=True)
+    Uterus = models.TextField(_('Utérus'), blank=True)
+    OvaireDroite = models.TextField(_('Trompe utérine droite'), blank=True)
+    OvaireGauche = models.TextField(_('Trompe utérine gauche'), blank=True)
+    GenitalF = models.TextField(_('Organe génital'), blank=True)
+    UterusVagin = models.TextField(_('Utérus vagin'), blank=True)
 
 
 
@@ -715,6 +764,7 @@ class TherapeutSettings(models.Model):
 
     # dashboard modules
     stats_enabled = models.BooleanField(_('Statistics'), default=True)
+    schoolEnable = models.BooleanField(_('SchoolEnable'), default=True)
     last_events_enabled = models.BooleanField(_('Events history'),
                                               default=True)
 

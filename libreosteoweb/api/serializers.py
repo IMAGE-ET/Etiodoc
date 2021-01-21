@@ -74,7 +74,7 @@ class PatientExportSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Patient
-        fields = ('family_name', 'first_name', 'original_name', 'birth_date')
+        fields = ('family_name', 'first_name', 'original_name', 'birth_date', 'sex')
 
 
 class UserInfoSerializer(serializers.ModelSerializer):

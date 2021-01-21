@@ -394,6 +394,26 @@ input.ng-invalid:focus {
   height: 35vw;
 }
 
+.svgfoi {
+  height: 15vw;
+}
+
+.svgdigestif {
+  height: 29vw;
+}
+
+.svgrain {
+  height: 20vw;
+}
+
+.svghomme {
+  height: 20vw;
+}
+
+.svgfemme {
+  height: 20vw;
+}
+
 .relative1 {
   position: relative;
   left: 15vw;

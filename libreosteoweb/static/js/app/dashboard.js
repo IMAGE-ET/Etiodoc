@@ -33,6 +33,7 @@ dashboard.controller('DashboardCtrl', ['$scope', '$filter', 'growl', 'DashboardS
         $scope.statistics = null;
         $scope.officeEventLoader = null;
 
+
         var describe_map = function(range_array){
             var map = {};
             for(var i = 0; i < range_array.length; i++)

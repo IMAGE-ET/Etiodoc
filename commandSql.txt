@@ -284,3 +284,46 @@ ALTER TABLE libreosteoweb_examination ADD Dent44 text default '';
 ALTER TABLE libreosteoweb_examination ADD Dent45 text default '';
 ALTER TABLE libreosteoweb_examination ADD Dent46 text default '';
 ALTER TABLE libreosteoweb_examination ADD Dent47 text default '';
+
+
+ALTER TABLE libreosteoweb_examination ADD Foie text default '';
+ALTER TABLE libreosteoweb_examination ADD Rate text default '';
+ALTER TABLE libreosteoweb_examination ADD VesiculeBiliaire text default '';
+ALTER TABLE libreosteoweb_examination ADD Pancreas text default '';
+ALTER TABLE libreosteoweb_examination ADD Oesophage text default '';
+ALTER TABLE libreosteoweb_examination ADD Estomac text default '';
+ALTER TABLE libreosteoweb_examination ADD Duodenum text default '';
+ALTER TABLE libreosteoweb_examination ADD ColonTransverse text default '';
+ALTER TABLE libreosteoweb_examination ADD ColonAscendant text default '';
+ALTER TABLE libreosteoweb_examination ADD ColonDescendant text default '';
+ALTER TABLE libreosteoweb_examination ADD Rectum text default '';
+ALTER TABLE libreosteoweb_examination ADD Jujenum text default '';
+ALTER TABLE libreosteoweb_examination ADD Ileon text default '';
+ALTER TABLE libreosteoweb_examination ADD ColonSimoide text default '';
+ALTER TABLE libreosteoweb_examination ADD InstestinGrele text default '';
+ALTER TABLE libreosteoweb_examination ADD Colon text default '';
+ALTER TABLE libreosteoweb_examination ADD VessieM text default '';
+ALTER TABLE libreosteoweb_examination ADD Protaste text default '';
+ALTER TABLE libreosteoweb_examination ADD Penis text default '';
+ALTER TABLE libreosteoweb_examination ADD TesticuleDroite  text default '';
+ALTER TABLE libreosteoweb_examination ADD TesticuleGauche text default '';
+ALTER TABLE libreosteoweb_examination ADD GenitalM text default '';
+ALTER TABLE libreosteoweb_examination ADD Vagin text default '';
+ALTER TABLE libreosteoweb_examination ADD ColUterus text default '';
+ALTER TABLE libreosteoweb_examination ADD Uterus text default '';
+ALTER TABLE libreosteoweb_examination ADD OvaireDroite text default '';
+ALTER TABLE libreosteoweb_examination ADD OvaireGauche text default '';
+ALTER TABLE libreosteoweb_examination ADD GenitalF text default '';
+ALTER TABLE libreosteoweb_examination ADD UterusVagin text default '';
+ALTER TABLE libreosteoweb_examination ADD RainDroit text default '';
+ALTER TABLE libreosteoweb_examination ADD RainGauche text default '';
+ALTER TABLE libreosteoweb_examination ADD Vessie text default '';
+ALTER TABLE libreosteoweb_examination ADD TractusUrinaire text default '';
+ALTER TABLE libreosteoweb_examination ADD Appendice text default '';
+
+
+
+
+ALTER TABLE libreosteoweb_examination ADD prescipteur text;
+ALTER TABLE libreosteoweb_examination ADD manipulateur text;
+ALTER TABLE libreosteoweb_therapeutsettings ADD schoolEnable bool default 0;
