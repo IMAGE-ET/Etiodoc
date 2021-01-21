@@ -4946,7 +4946,7 @@
 
               </div>
               <!--homme-->
-              <div ng-if="model.patient_detail.sex == 'M'">
+              <div ng-if="model.patient_detail.sex == 'M' || model.patient_detail.sex == undefined">
                 <svg class="svghomme" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1221.000000 2200.000000" xmlns:xlink="http://www.w3.org/1999/xlink">
                   <g transform="translate(0.000000,2200.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
                     <a>
@@ -5066,7 +5066,7 @@
               </div>
             </div>
             <!--femme-->
-            <div ng-if="model.patient_detail.sex == 'F'">
+            <div ng-if="model.patient_detail.sex == 'F' || model.patient_detail.sex == undefined">
               <svg class="svgfemme" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2200.000000 2150.000000" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <g transform="translate(0.000000,2150.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
                   <a>
