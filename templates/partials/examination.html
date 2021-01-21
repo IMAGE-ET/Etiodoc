@@ -2484,20 +2484,6 @@
               </div>
             </div>
           </div>
-          <div class="maDiv" id="divTissu" style="float:left;" hidden>
-            <div class="relative1">
-              <h3>Incomming</h3>
-              <img src="./static/images/tissusMou.png" alt="incomming" style="max-width: 100%;">
-            </div>
-            <div class="relative1" ng-if="model.patient_detail.sex == 'M'">
-              <h3>Homme</h3>
-              <img src="" alt="incomming" style="max-width: 100%;">
-            </div>
-            <div class="relative1" ng-if="model.patient_detail.sex == 'F'">
-              <h3>Femme</h3>
-              <img src="" alt="incomming" style="max-width: 100%;">
-            </div>
-          </div>
 
           <div class="toggleDiv">
 
@@ -4965,7 +4951,7 @@
                   <g transform="translate(0.000000,2200.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
                     <a>
                       <title>{{ examination.GenitalM }}</title>
-                      <path ng-click="toggleT21 = !toggleT21; toggleSwitch('model.GenitalM', model.GenitalM.length)" ng-class="{'couleurclick' : toggleT21 || model.GenitalM !== '' && model.GenitalM}" d="M6080 21518 c-290 -27 -616 -132 -853 -274 -244 -147 -520 -419 -666
+                      <path ng-click="toggleT21 = !toggleT21; toggleSwitch('model.GenitalM', model.GenitalM.length)" ng-class="{'selectCervicale' : toggleT21 || model.GenitalM !== '' && model.GenitalM}" d="M6080 21518 c-290 -27 -616 -132 -853 -274 -244 -147 -520 -419 -666
                 -657 -214 -350 -326 -800 -291 -1177 16 -175 44 -312 97 -475 75 -231 157
                 -388 299 -575 78 -103 292 -318 391 -393 379 -287 909 -437 1371 -386 333 36
                 686 166 942 346 127 90 404 366 493 493 248 354 385 851 349 1267 -36 410
@@ -4975,7 +4961,7 @@
                     <a>
                       <title>{{ examination.VessieM }}</title>
                       <path ng-click="toggleT22 = !toggleT22; toggleSwitch('model.VessieM', model.VessieM.length)"
-                        ng-class="{'couleurclick' : toggleT22 || model.VessieM !== '' && model.VessieM, 'couleurclick' : toggleT21 || model.GenitalM !== '' && model.GenitalM}" d="M6228 16105 c-2 -3 -42 -9 -89 -14 -228 -25 -663 -123 -892 -201
+                        ng-class="{'couleurclick' : toggleT22 || model.VessieM !== '' && model.VessieM, 'selectCervicale' : toggleT21 || model.GenitalM !== '' && model.GenitalM}" d="M6228 16105 c-2 -3 -42 -9 -89 -14 -228 -25 -663 -123 -892 -201
                 -296 -100 -742 -345 -1022 -561 -83 -63 -188 -142 -235 -176 -112 -80 -268
                 -244 -399 -416 -77 -102 -112 -230 -141 -517 -6 -63 -16 -148 -21 -188 -12
                 -98 -12 -627 1 -733 24 -202 33 -263 61 -404 70 -351 143 -572 287 -864 127
@@ -4992,7 +4978,7 @@
                     <a>
                       <title>{{ examination.TesticuleGauche }}</title>
                       <path ng-click="toggleT23 = !toggleT23; toggleSwitch('model.TesticuleGauche', model.TesticuleGauche.length)"
-                        ng-class="{'couleurclick' : toggleT23 || model.TesticuleGauche !== '' && model.TesticuleGauche, 'couleurclick' : toggleT21 || model.GenitalM !== '' && model.GenitalM}" d="M8785 15751 c-47 -22 -109 -84 -124 -124 -6 -16 -11 -44 -11 -64 0
+                        ng-class="{'couleurclick' : toggleT23 || model.TesticuleGauche !== '' && model.TesticuleGauche, 'selectCervicale' : toggleT21 || model.GenitalM !== '' && model.GenitalM}" d="M8785 15751 c-47 -22 -109 -84 -124 -124 -6 -16 -11 -44 -11 -64 0
                 -45 28 -71 188 -176 93 -60 126 -77 132 -67 5 7 6 19 3 27 -9 23 7 62 32 79
                 24 16 28 15 90 -15 94 -47 142 -113 290 -403 128 -252 192 -400 220 -507 10
                 -40 18 -127 21 -254 7 -217 5 -801 -2 -832 -3 -11 -9 -110 -15 -220 -6 -110
@@ -5021,7 +5007,7 @@
                     <a>
                       <title>{{ examination.TesticuleDroite }}</title>
                       <path ng-click="toggleT24 = !toggleT24; toggleSwitch('model.TesticuleDroite', model.TesticuleDroite.length)"
-                        ng-class="{'couleurclick' : toggleT24 || model.TesticuleDroite !== '' && model.TesticuleDroite, 'couleurclick' : toggleT21 || model.GenitalM !== '' && model.GenitalM}" d="M3435 15710 c-96 -22 -218 -70 -380 -150 -66 -32 -203 -94 -303 -136
+                        ng-class="{'couleurclick' : toggleT24 || model.TesticuleDroite !== '' && model.TesticuleDroite, 'selectCervicale' : toggleT21 || model.GenitalM !== '' && model.GenitalM}" d="M3435 15710 c-96 -22 -218 -70 -380 -150 -66 -32 -203 -94 -303 -136
                 -101 -42 -211 -95 -245 -117 -78 -51 -328 -300 -389 -387 -61 -88 -160 -261
                 -207 -364 -104 -224 -232 -705 -262 -976 -5 -47 -15 -137 -22 -200 -24 -230
                 -14 -959 23 -1630 21 -366 30 -641 40 -1125 11 -555 4 -2414 -11 -2790 -5
@@ -5046,7 +5032,7 @@
                     <a>
                       <title>{{ examination.Protaste }}</title>
                       <path ng-click="toggleT25 = !toggleT25; toggleSwitch('model.Protaste', model.Protaste.length)"
-                        ng-class="{'couleurclick' : toggleT25 || model.Protaste !== '' && model.Protaste, 'couleurclick' : toggleT21 || model.GenitalM !== '' && model.GenitalM}" d="M7315 10724 c-119 -20 -236 -35 -365 -44 -772 -57 -1129 -54 -1472
+                        ng-class="{'couleurclick' : toggleT25 || model.Protaste !== '' && model.Protaste, 'selectCervicale' : toggleT21 || model.GenitalM !== '' && model.GenitalM}" d="M7315 10724 c-119 -20 -236 -35 -365 -44 -772 -57 -1129 -54 -1472
                 11 -107 20 -108 20 -150 1 -56 -26 -142 -117 -207 -220 -63 -100 -82 -143
                 -121 -276 -36 -123 -50 -242 -50 -427 0 -157 17 -232 95 -414 62 -147 79 -177
                 154 -285 103 -150 214 -257 385 -374 152 -104 387 -199 556 -226 41 -6 99 -15
@@ -5057,7 +5043,7 @@
                     <a>
                       <title>{{ examination.Penis }}</title>
                       <path ng-click="toggleT26 = !toggleT26; toggleSwitch('model.Penis', model.Penis.length)"
-                        ng-class="{'couleurclick' : toggleT26 || model.Penis !== '' && model.Penis, 'couleurclick' : toggleT21 || model.GenitalM !== '' && model.GenitalM}" d="M4900 10358 c-92 -53 -150 -100 -271 -224 -78 -81 -131 -146 -166
+                        ng-class="{'couleurclick' : toggleT26 || model.Penis !== '' && model.Penis, 'selectCervicale' : toggleT21 || model.GenitalM !== '' && model.GenitalM}" d="M4900 10358 c-92 -53 -150 -100 -271 -224 -78 -81 -131 -146 -166
                 -204 -125 -209 -215 -427 -287 -695 -113 -423 -166 -812 -186 -1370 -6 -154
                 -15 -399 -21 -545 -13 -304 -6 -1196 11 -1425 40 -553 64 -799 130 -1327 6
                 -46 15 -121 20 -168 6 -47 16 -132 23 -190 6 -58 12 -154 12 -215 0 -102 -3
