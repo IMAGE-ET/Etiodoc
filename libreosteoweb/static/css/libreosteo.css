@@ -554,3 +554,7 @@ path:focus {
 .colorText {
   color: #797979;
 }
+
+.divFoi{
+  float: left;
+}

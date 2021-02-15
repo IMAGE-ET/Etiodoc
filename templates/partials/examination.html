@@ -4554,9 +4554,9 @@
           Tissu mou
         </div>
         <div class="panel-body row" style="margin-left: 5px; margin-right: 5px">
-          <div class="maDiv" style="float:left;">
+          <div>
             <!--foie-->
-            <div>
+            <div style="float: left;">
               <svg class="svgfoi" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750.000000 410.000000" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <g transform="translate(0.000000,410.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
                   <a>
@@ -4636,12 +4636,9 @@
                   </a>
                 </g>
               </svg>
-
-
             </div>
             <!--digestif-->
-            <div>
-              <div>
+              <div style="float:left; padding-right: 3%;">
                 <svg class="svgdigestif" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 859.000000 1200.000000" xmlns:xlink="http://www.w3.org/1999/xlink">
                   <g transform="translate(0.000000,1200.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
                     <a>
@@ -4853,11 +4850,9 @@
                     </a>
                   </g>
                 </svg>
-
               </div>
-              <br><br>
               <!--Rain-->
-              <div style="float:left;">
+              <div style="float:left; padding-right: 5%;">
                 <svg class="svgrain" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1022.000000 2350.000000" xmlns:xlink="http://www.w3.org/1999/xlink">
                   <g transform="translate(0.000000,2350.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
                     <a>
@@ -4943,10 +4938,9 @@
                     </a>
                   </g>
                 </svg>
-
               </div>
               <!--homme-->
-              <div ng-if="model.patient_detail.sex == 'M' || model.patient_detail.sex == undefined">
+              <div ng-if="model.patient_detail.sex == 'M' || model.patient_detail.sex == undefined" style="float:left;">
                 <svg class="svghomme" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1221.000000 2200.000000" xmlns:xlink="http://www.w3.org/1999/xlink">
                   <g transform="translate(0.000000,2200.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
                     <a>
@@ -5062,9 +5056,7 @@
                     </a>
                   </g>
                 </svg>
-
               </div>
-            </div>
             <!--femme-->
             <div ng-if="model.patient_detail.sex == 'F' || model.patient_detail.sex == undefined">
               <svg class="svgfemme" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2200.000000 2150.000000" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -5263,7 +5255,7 @@
               </svg>
             </div>
           </div>
-          <div class="toggleDiv">
+          <div>
 
             <div ng-class="{'hide' : !toggleT0, 'nothide' : model.Foie != '' && model.Foie}">
               <div class="row">
